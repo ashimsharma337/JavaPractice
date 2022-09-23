@@ -18,7 +18,7 @@ public class HelloWorld {
     
 }
 
-class divide {
+class divide {                                // This class is outside public class 
     static void division(int f, int g) {
         System.out.println("The division of given number is "+ (f/g));
     }
