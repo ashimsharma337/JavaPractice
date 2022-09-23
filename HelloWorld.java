@@ -5,6 +5,7 @@ public class HelloWorld {
         add(5, 3);
         HelloWorld obj = new HelloWorld();
         obj.mul(6,2);
+        divide.division(16, 4);
     }
 
     static void add(int a, int b) {             // static method no need to create object while accessing
@@ -15,4 +16,10 @@ public class HelloWorld {
         System.out.println("The multiplication of given two number is "+(d*e));
     }
     
+}
+
+class divide {
+    static void division(int f, int g) {
+        System.out.println("The division of given number is "+ (f/g));
+    }
 }
