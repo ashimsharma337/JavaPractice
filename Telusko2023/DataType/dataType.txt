@@ -1,0 +1,25 @@
+
+
+1. primitive 
+
+         a. Integer 
+            1. byte ---1 byte --2^7 to 2^7 -1
+            2. short 
+            3. int 
+            4. long eg. long l = 58453l;
+
+
+         b. Float 
+            1. float ---4 bytes num = 5.6f;
+            2. double ---8 bytes num = 5.6; This is default so f on float.(Good for Scientific calculations.)
+
+         c. Character 
+            1. char --2 bytes , UNICODE , char c = 'k' //single quote and onlyone character sometimes number are also character char c = '8';
+
+         d. Boolean ----true or false , someother language uses (0,1) but not in java 
+                        boolean c = false;
+
+           // The values of datatypes are also known as literals 
+
+2. Non-primitive
+
