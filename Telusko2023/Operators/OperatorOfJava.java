@@ -43,6 +43,61 @@ public class OperatorOfJava {
 
         // System.out.println(result); 
 
+
+                          // Logical operators
+            // if we have two ralational operators and we want to combine them to check if it is true or false
+        
+        // x < y  and a > b // two conditions (we have and AND/OR)
+
+        // And(&) Operator if both are true, then true, 
+        // OR(|) Operator if one of them is true or fale(one true it will be true), 
+        // NOT(!) Operator it is used to reverse 
+        
+        // shortcircuit (&&, ||, !) x < Y && a < b 
+        // r = x < y && a < b, it will be true if both conditions are true
+        // r = x < y || a < b, it is called shortcircuit because if one condition is true it will not even check second one(saving time)
+        // instead of single we will used shortcircuit
+
+        // code
+
+        int x = 7;
+        int y = 5;
+        int a = 5;
+        int b = 9;
+        // logical AND(&&) operator
+
+        // boolean result = x > y && a > b;      // output is false because one value is false
+        // boolean result = x > y && a < b;      // ouput s true because both conditions are true
+
+        // logical OR operator(||)
+
+        // boolean result = x > y || a < b;      // output is true because both conditions are true
+        // boolean result = x > y || a > b;      // output is true because one condition is true
+
+        // logical NOT operator(!)
+        
+        // The NOt operator reverse the value of a boolean expression. 
+        // Thus, if the expression is true, Not changes to false, and vice versa.
+
+        // boolean result = a > b;      // output is false
+
+        // System.out.println(!result);  // output is true
+        // Anther example
+        boolean z = true;
+        if(z) { // prints this is true
+            System.out.println("This is true.");
+        } else {
+            System.out.println("This is false.");
+        }
+
+        // if(!z){ // prints This is false
+        //     System.out.println("This is true.");
+        // } else {
+        //     System.out.println("This is false.");
+        // }
+
+
+        //System.out.println(result);
     }
 
 
