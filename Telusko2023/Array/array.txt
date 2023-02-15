@@ -1,0 +1,29 @@
+Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.
+To declare an array, define the variable type with square brackets
+
+String[] cars;
+
+To insert values to it, you can place the values in a comma-separated list, inside curly braces
+
+String[] cars = {"BMW", "Ford", "Toyota", "Honda"};
+
+for an array of integers, we can write 
+
+int[] myNum = {10, 20, 30, 40};
+To fetch number 20, we can write myNum[1]
+
+Arrays has index number which start from 0
+
+once we define the size of an array we have to stick to it 
+for example,
+    int num1[] = new int[4];     where 4 is the size which will have 4 values we can not change it.
+
+Multi-Dimensional Array
+       A multidimensional array is an array of arrays.
+
+       int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };
+       
+       System.out.println(myNumbers[1][2]); // Outputs 7
+
+       Multidimensional arrays are useful when you want
+       to store data as a tabular form, like a table with rows and columns.

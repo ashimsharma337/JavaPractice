@@ -71,14 +71,14 @@ public class Loops {
 
         // printing pattern using nested loop
 
-        for(int i=0;i<=4;i++) {      
+        for(int i=0;i<=4;i++) {      // i represent row j represent column
            
                 for(int j=i; j<4; j++) {
     
                     System.out.print("*");
                 }
 
-            System.out.println("*");
+            System.out.println(); // To start on a new line
         }
 
     }
