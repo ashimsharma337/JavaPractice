@@ -18,3 +18,9 @@ pen, laptop, mobile, bed, keyboard, mouse, chair etc.	  Class is a group of simi
 7)	There are many ways to create object in java such as 
 new keyword, newInstance() method, clone() method,
 factory method and deserialization.	                      There is only one way to define class in java using class keyword.
+
+
+
+JDK  - java development kit         -it compile the code to byte code, JDK has both JVM, and JRE.
+JVM  - java virtual machine         -it execute the code (run), JVM is a part of JRE.
+JRE  - java runtime enviroment      -extra file which we need in our code such as inbuilt classes, it also validate class, it loads the classes too.
