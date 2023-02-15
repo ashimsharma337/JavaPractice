@@ -1,5 +1,5 @@
 Conditional statement are also known as controll statement. For example, in AI(Like what to do in certain conditions).
 It determines the flow of programs. When to start or execute, what to execute when certain condition is met.
 
-1. If else
-    a. If can be alone but else can not be alone.
+1. if else
+    a. if can be alone but else can not be alone.
