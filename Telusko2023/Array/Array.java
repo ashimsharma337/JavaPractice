@@ -146,15 +146,43 @@ public class Array {
         students[1] = s2;
         students[2] = s3;
 
-        for(int i=0; i<students.length; i++)
-        {
-            System.out.println(students[i].name + " : " + students[i].marks);
+        // for(int i=0; i<students.length; i++)
+        // {
+        //     System.out.println(students[i].name + " : " + students[i].marks);
 
-            /* Output
-             * Navin : 88
-               Ashim : 67
-               Kiran : 96
-             */
+        //     /* Output
+        //      * Navin : 88
+        //        Ashim : 67
+        //        Kiran : 96
+        //      */
+        // }
+
+        // Using for each loop
+
+        // int nums[] = new int[4];
+        // nums[0] = 4;
+        // nums[1] = 8;
+        // nums[2] = 3;
+        // nums[3] = 9;
+        
+        // using for looop
+        // for(int i=0; i<nums.length; i++)
+        // {
+        //     System.out.println(nums[i]);
+        // }
+
+        // for each loop only works with array and array types data
+
+        // for (int n : nums)     // it will iterate the nums and give value to n
+        // {
+        //     System.out.println(n);
+        // }
+        
+        // using for each loop(enhanced for loop) on student array
+        
+        for(Student stud : students)
+        {
+            System.out.println(stud.name + " : " + stud.marks);
         }
 
     }
