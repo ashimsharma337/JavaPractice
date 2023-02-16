@@ -41,27 +41,55 @@ public class Array {
 
         // Assigning values in array 
 
-        int nums [] [] = new int[3][4];
+        // int nums [] [] = new int[3][4];
 
-        for(int i = 0; i<3; i++) {     
+        // for(int i = 0; i<3; i++) {     
              
-            for(int j = 0; j<4; j++) {
-                nums[i][j] = (int)(Math.random()*100); // changing value to int with the help of type casting
-                // System.out.println(nums[i][j]);
-            }
+        //     for(int j = 0; j<4; j++) {
+        //         nums[i][j] = (int)(Math.random()*100); // changing value to int with the help of type casting
+                 // System.out.println(nums[i][j]);
+        //     }
             
-        }
+        // }
 
-        for(int i = 0; i<3; i++) {    
+        // for(int i = 0; i<3; i++) {    
              
-            for(int j = 0; j<4; j++) {
-                System.out.print(nums[i][j] + " ");
-            }
-            System.out.println();      // prints number in a table form with row and column
+        //     for(int j = 0; j<4; j++) {
+        //         System.out.print(nums[i][j] + " ");
+        //     }
+        //     System.out.println();      // prints number in a table form with row and column
+        // }
+
+         // Enhanced for loop or for each loop
+        // for(int n[] : nums) {
+        //     for(int m : n) {
+        //         System.out.print(m + " ");
+        //     }
+        //     System.out.println();
+        // }
+
+        // It is commonly used to iterate over an array or a collections class(eg, ArrayList)
+        // syntax
+        //    for(type var : array)
+        //    {
+        //       statements using var;
+        //    }
+        
+        int ar[] ={ 50, 60, 80, 90, 10 };
+
+        // for (int element : ar)
+        // {
+        //     System.out.println(element + " ");  // output: 50, 60, 80, 90, 10
+        // }
+
+        // The above syntax is equivalent to 
+        for (int i = 0; i < ar.length; i++)
+        {
+             int element = ar[i];
+             System.out.println(element + " ");
+
         }
 
-
-        
 
     }
 }
