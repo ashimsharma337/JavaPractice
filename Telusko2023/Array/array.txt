@@ -27,3 +27,15 @@ Multi-Dimensional Array
 
        Multidimensional arrays are useful when you want
        to store data as a tabular form, like a table with rows and columns.
+
+
+Draw backs of Array
+1. Size is fixed so there is a chance of memory wastage
+
+2. Insertion and deletion operations on arrays can be slow,
+as they require shifting elements to make room for new elemwnts
+or close the gap left by deleted elements.
+
+3. It can store a single type of primitives only.
+
+Collections will can be used to overcome the draw backs of array. Both are useful depending on conditions.

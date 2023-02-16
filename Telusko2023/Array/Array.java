@@ -1,4 +1,10 @@
 
+class Student 
+{
+    int rollno;             
+    String name;
+    int marks;
+}
 
 public class Array {
     
@@ -92,27 +98,64 @@ public class Array {
 
         // if we don't know the size of column in internal rows (jagged array)
 
-        int nums[][] = new int[3][];   //jagged
+        // int nums[][] = new int[3][];   //jagged
 
-        nums[0] = new int[3];
-        nums[1] = new int[4];
-        nums[2] = new int[2];
+        // nums[0] = new int[3];
+        // nums[1] = new int[4];
+        // nums[2] = new int[2];
         
-        for(int i=0;i<nums.length;i++)
+        // for(int i=0;i<nums.length;i++)
+        // {
+        //     for(int j=0; j<nums[i].length;j++)
+        //     {
+        //         nums[i][j] = (int)(Math.random() * 10);
+        //     }
+        // }
+
+        // for(int n[] : nums)
+        // {
+        //     for(int m: n)
+        //     {
+        //         System.out.print(m + " ");
+        //     }
+        //     System.out.println();
+        // }  
+
+        // More examples
+
+        Student s1 = new Student();
+        s1.rollno = 1;
+        s1.name = "Navin";
+        s1.marks = 88;
+        
+        // System.out.println(s1);  // prints Student@73a28541(address format) not printing the value of s1 
+        // System.out.println(s1.name); // prints student(s1) name
+
+        Student s2 = new Student();
+        s2.rollno = 2;
+        s2.name = "Ashim";
+        s2.marks = 67;
+
+        Student s3 = new Student();
+        s3.rollno = 3;
+        s3.name = "Kiran";
+        s3.marks = 96;
+
+        Student students[] = new Student[3];
+        students[0] = s1;
+        students[1] = s2;
+        students[2] = s3;
+
+        for(int i=0; i<students.length; i++)
         {
-            for(int j=0; j<nums[i].length;j++)
-            {
-                nums[i][j] = (int)(Math.random() * 10);
-            }
+            System.out.println(students[i].name + " : " + students[i].marks);
+
+            /* Output
+             * Navin : 88
+               Ashim : 67
+               Kiran : 96
+             */
         }
 
-        for(int n[] : nums)
-        {
-            for(int m: n)
-            {
-                System.out.print(m + " ");
-            }
-            System.out.println();
-        }
     }
 }
