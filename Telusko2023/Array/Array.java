@@ -75,7 +75,7 @@ public class Array {
         //       statements using var;
         //    }
         
-        int ar[] ={ 50, 60, 80, 90, 10 };
+        // int ar[] ={ 50, 60, 80, 90, 10 };
 
         // for (int element : ar)
         // {
@@ -83,13 +83,36 @@ public class Array {
         // }
 
         // The above syntax is equivalent to 
-        for (int i = 0; i < ar.length; i++)
-        {
-             int element = ar[i];
-             System.out.println(element + " ");
+        // for (int i = 0; i < ar.length; i++)
+        // {
+        //      int element = ar[i];
+        //      System.out.println(element + " ");
 
+        // }
+
+        // if we don't know the size of column in internal rows (jagged array)
+
+        int nums[][] = new int[3][];   //jagged
+
+        nums[0] = new int[3];
+        nums[1] = new int[4];
+        nums[2] = new int[2];
+        
+        for(int i=0;i<nums.length;i++)
+        {
+            for(int j=0; j<nums[i].length;j++)
+            {
+                nums[i][j] = (int)(Math.random() * 10);
+            }
         }
 
-
+        for(int n[] : nums)
+        {
+            for(int m: n)
+            {
+                System.out.print(m + " ");
+            }
+            System.out.println();
+        }
     }
 }
