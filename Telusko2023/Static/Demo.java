@@ -3,13 +3,16 @@ class Mobile
 {
     String brand;         // instance variable it differs between objects
     int price;
-    static String name;   // it is class level and shared by all the object
+    static String name;   // it is class level and shared by all the object, saves memroy as well
+    
+
 
     public void show()
     {
         System.out.println(brand + " : " + name);
     }
 }
+
 
 public class Demo {
     
