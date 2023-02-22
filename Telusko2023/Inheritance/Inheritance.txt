@@ -1,0 +1,59 @@
+Inheritance
+
+The idea behind inheritance in Java is that you can create new classes that are built upon existing classes. 
+When you inherit from an existing class, you can reuse methods and fields of the parent class.
+Moreover, you can add new methods and fields in your current class also.
+
+Inheritance represents the IS-A relationship which is also known as a parent-child relationship.
+
+Why use inheritance in java
+For Method Overriding (so runtime polymorphism can be achieved).
+For Code Reusability.
+
+Points to Remember
+Constructor cannot be inherited in Java.
+Private members do not get inherited in Java.
+Cyclic inheritance is not permitted in Java.
+Assign parent reference to child objects.
+Constructors get executed because of super() present in the constructor.
+
+Types of Inheritance
+Java supports the following four types of inheritance:
+
+Single Inheritance
+Multi-level Inheritance
+Hierarchical Inheritance
+Hybrid Inheritance
+
+
+
+is, has 
+
+e.g laptop is a computer, toyota is a car.
+    computer has a hardrive, car has a steering 
+
+
+An IS-A relationship is inheritance. The classes which inherit are known as sub classes or child classes. 
+On the other hand, HAS-A relationship is composition.
+
+In OOP, IS-A relationship is completely inheritance. This means, that the child class is a type of parent class. 
+For example, an apple is a fruit. So you will extend fruit to get apple.
+
+class Apple extends Fruit {
+
+}
+
+On the other hand, composition means creating instances which have references to other objects. 
+For example, a room has a table. So you will create a class room and then in that class create an instance of type table.
+
+class Room {
+
+    Table table = new Table();
+
+}
+A HAS-A relationship is dynamic (run time) binding while inheritance is a static (compile time) binding. 
+If you just want to reuse the code and you know that the two are not of same kind use composition. 
+For example, you cannot inherit an oven from a kitchen. A kitchen HAS-A oven. 
+When you feel there is a natural relationship like Apple is a Fruit use inheritance.
+
+
