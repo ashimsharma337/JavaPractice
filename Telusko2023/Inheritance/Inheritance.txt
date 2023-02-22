@@ -25,6 +25,9 @@ Multi-level Inheritance
 Hierarchical Inheritance
 Hybrid Inheritance
 
+Note: Multiple inheritance in java is not allowed(Language like c++ allow multiple inheritance)
+      Ambiguity problem(confusion while choosing parent class for same method)
+      Also, with the help of Interface we can achieve multiple inheritance 
 
 
 is, has 
