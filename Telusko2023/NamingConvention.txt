@@ -1,0 +1,11 @@
+
+Camel casing is used in java 
+
+class and interface - Calc, Runnable (Starts with capitol letter)
+variable and method - marks, show()
+constants - PIE, BRAND 
+
+showMyMarks() --methods 
+age           --variable 
+DATA          --constant 
+Human()       --constructor 
