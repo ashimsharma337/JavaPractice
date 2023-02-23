@@ -1,0 +1,10 @@
+Types of Polymorphism
+
+a. Compile time polymorphism(early binding).
+       Method Overloading
+         e.g add(int n1, int n2);
+             add(int n1, int n2, int n3);
+
+b. Run time polymorphism(late binding).
+       Method Overriding
+        e.g In Inheritance, sub class over ride parent class method.
