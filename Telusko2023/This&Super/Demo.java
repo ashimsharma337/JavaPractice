@@ -25,7 +25,8 @@ class A
 
 class B extends A
 {
-  public B()
+  
+public B()
   {  
      super();
      System.out.println("in B");
@@ -43,7 +44,7 @@ public class Demo {
     
     public static void main(String[] args)
     {
-        B obj = new B(5);   // when we create a object it call a constructor of 
+        Test1 obj = new Test1(5);   // when we create a object it call a constructor of 
                            // its class and super class as well
     }
 }

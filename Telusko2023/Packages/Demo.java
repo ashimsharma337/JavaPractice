@@ -11,9 +11,12 @@ public class Demo {
     
     public static void main(String[] args)
     {   
+        
         ArrayList list = new ArrayList();  // e.g
 
         Calc obj = new Calc();
         AdvCalc obj1 = new AdvCalc();
+        int result = obj.add(5, 6);
+        System.out.println(result);
     }
 }
