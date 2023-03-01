@@ -1,0 +1,18 @@
+An Interface is defined as an abstract type used to specify the behavior of a class.
+An interface in Java is a blueprint of a behaviour. 
+An interface contains static constants and abstract methods.
+
+With the interface we can achieve 100% abstraction. 
+There can be only abstract methods in the interface, not the method body. 
+It is used to achieve 100% abstraction and multiple inheritance in Java. 
+
+Interfaces can have abstract methods and variables. 
+It cannot have a method body. Java Interface also represents the IS-A relationship.
+
+When we decide a type of entity by its behaviour and not via attribute we should define it as an interface.
+
+Like a class, an interface can have methods and variables, 
+but the methods declared in an interface are by default abstract (only method signature, no body). 
+
+The methods which are defined in interface must be in the class which implements it.
+The variables declared inside interface are final and static 
