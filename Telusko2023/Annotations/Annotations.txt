@@ -1,0 +1,16 @@
+In a simple words java annotations are supplements to the compiler.
+(It is also a meta data which is extra information provided to compiler or runtime)
+
+Java Annotation is a tag that represents the metadata 
+i.e. attached with class, interface, methods or fields 
+to indicate some additional information which can be used by java compiler and JVM.
+
+Annotations in Java are used to provide additional information, 
+so it is an alternative option for XML and Java marker interfaces.
+
+In core java we don't use annotations that much 
+Once, we start working with frameworks e.g Hibernate, Spring which are driven with annotation 
+
+annotation can be 
+-class level(e.g @Deprecated, @Entity) 
+-method level(e.g @SuppressWarnings, @deprecatedmethod())
