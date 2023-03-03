@@ -6,6 +6,7 @@ With the interface we can achieve 100% abstraction.
 There can be only abstract methods in the interface, not the method body. 
 It is used to achieve 100% abstraction and multiple inheritance in Java. 
 
+All the methods define in an Interface are public abstract.
 Interfaces can have abstract methods and variables. 
 It cannot have a method body. Java Interface also represents the IS-A relationship.
 
@@ -16,3 +17,15 @@ but the methods declared in an interface are by default abstract (only method si
 
 The methods which are defined in interface must be in the class which implements it.
 The variables declared inside interface are final and static 
+
+
+Types of Interface
+a. Normal Interface
+          - Multiple methods (Two or More)
+b. Functional Interface(SAM) 
+          - Single Abstract Method (only one method)
+c. Marker Interface 
+          - Interface with no method(Blank)
+          - it is used to update compiler e.g (Serilization)
+          - All object are not allowed to do Serilization and Deserilization
+          - Marker Interface will help to do serilization and Deserilization that object
