@@ -1,0 +1,48 @@
+
+Compilation and Bytecode
+-Java Development Kit (JDK) compiles code 
+-Java Virtual machine (JVM) executes code 
+
+Process of execution
+1. Java file is converted into class filev(Bytecode) with javac command (compilation) 
+2. With the help of java command following file name JVM executes the class file 
+
+Note: class file can be switch to different JVM (WORA is applicable)
+     - Main method is the entry point for the execution of the code 
+
+Memory Management in java 
+- Java does automatic memory management 
+- The major difference between Stack memory and heap memory is that 
+  the stack is used to store the order of method execution and local variables 
+  while the heap memory stores the objects and it uses dynamic memory allocation and deallocation.
+
+         Stack                                                         
+- It is a temporary storage memory. When the computing task is complete, 
+  the memory of the variable will be automatically erased. 
+  The stack section mostly contains methods, local variables, and reference variables.
+- The stack memory is a physical space (in RAM) allocated to each thread at run time. 
+  It is created when a thread creates. Memory management in the stack follows LIFO (Last-In-First-Out) order
+  because it is accessible globally
+
+  --Method calls, variable declared in the methods, Refrence variables
+  --cleaned up as method completes 
+
+        Heap 
+- It is created when the JVM starts up and used by the application as long as the application runs.
+  It stores objects and JRE classes. 
+  Whenever we create objects it occupies space in the heap memory 
+  while the reference of that object creates in the stack. 
+  It does not follow any order like the stack. 
+  It dynamically handles the memory blocks. 
+  It means, we need not to handle the memory manually. 
+  For managing the memory automatically, 
+  Java provides the garbage collector that deletes the objects which are no longer being used.
+  Memory allocated to heap lives until any one event, either program terminated or memory free does not occur. 
+  The elements are globally accessible in the application
+
+  --Objects, Intance variables, JVM cleans up object not in use (known as garbage collection)
+
+
+
+
+
