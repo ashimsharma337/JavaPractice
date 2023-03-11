@@ -40,7 +40,8 @@ Memory Management in java
   Memory allocated to heap lives until any one event, either program terminated or memory free does not occur. 
   The elements are globally accessible in the application
 
-  --Objects, Intance variables, JVM cleans up object not in use (known as garbage collection)
+  --Objects, Intance variables, JVM cleans up object not in use (known as garbage collection) 
+  
 
 
 
