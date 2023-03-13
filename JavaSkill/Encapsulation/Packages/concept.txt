@@ -1,0 +1,15 @@
+Packages 
+- Packages are folder that bundles related classes 
+- So, Encapsulation doesn't apply to single class but also multiple classes 
+- Typically "reverse" domain name 
+     - com.example.project 
+- Packages provide a fully-qualified class name 
+     - Avoids naming collisions 
+     - com.example.project.Message != net.tutorial.Message 
+- Packages are a hierarchial structure 
+
+- The first line of a class must be the package statement 
+- We can import classes into another class using import key word 
+        
+        
+                  
