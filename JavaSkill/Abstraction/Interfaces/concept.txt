@@ -1,0 +1,16 @@
+Interfaces 
+
+- Interfaces are purely 100% abstract 
+- Define a contract that classes follow 
+- Usually used to established the behavior for an API 
+- Interface methods are implicitly public abstract 
+- Classses can implement many interfaces 
+- Abstract class (what it is), Interface (what it does)
+
+interface Drawable {
+    void draw();
+}
+
+class Shape implements Drawable {
+    void draw() {.......}                // over-ride the draw method, and defining its own draw method how to draw shape
+}
