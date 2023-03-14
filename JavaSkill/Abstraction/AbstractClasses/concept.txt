@@ -1,0 +1,11 @@
+
+Abstract Classes 
+- Abstract classes are partially built classes 
+- Methods defined abstract do not need a method body 
+- May have zero to many abstract methods 
+- class must be declared as abstract to allow abstract methods 
+- Abstract classes can not be instantiated 
+- Abstract classes can extend other abstract classes 
+           abstract class Shape {
+                   abstract double area();
+           }

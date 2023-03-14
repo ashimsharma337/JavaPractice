@@ -1,0 +1,14 @@
+Abstraction 
+- Building partial or incomplete classes 
+- Create a foundation for other classes 
+- Generalizations group shared functionality into a parent 
+- Create classes without knowing how they're to be implemented 
+- Abstraction can be achieved by abstract classes and interface 
+
+
+e.g 
+
+Shape                         ---------->          Traingle 
+public abstract                                   double a,b,c
+double area()                                      public double 
+                                                   area() {}
