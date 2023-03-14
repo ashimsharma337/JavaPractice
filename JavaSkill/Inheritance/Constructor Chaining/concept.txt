@@ -1,0 +1,18 @@
+Constructor Chaining 
+
+- Every class in Java inherits from java.lang.Object 
+- Without defining a superclass, extends Object is implied 
+- The first line of a constructor must be a call to super or this 
+                 - Super()    -- by default 
+- Calling a constructor causes a chain of constructors to fire 
+               variable                               variable used
+    Object<---Employee<---Software Professsional<---Java developer 
+
+    we can change this default behavior by declaring super or this by ourselves 
+       
+       No Args constructor 
+    public Java Developer() {}      implicitly calling super 
+
+    public Java Developer (String name) {
+        this();                     call No Args java developer instead of super 
+    }
