@@ -1,0 +1,29 @@
+JavaBeans 
+     - The 'beans' of JavaBeans are classes that encapsulates one or more object into a single standard object(the bean).
+     - A JavaBean is a POJO that is serilazable, has a no-argument constructor, and alllows access to properties 
+       using getter and setter method that follow a simple naming convention 
+
+     Advantage:
+       -The properties, events and methods of a bean can be exposed to another application
+       -A bean may register to receive events from other objects 
+        and can generate events that are sent to those other objects 
+       -The configuration settings of a bean can be saved to persistent storage and restored 
+
+The following shows an example of a JavaServer Faces(JSF) component having bidirectional binding to a POJO's property
+
+    <h:inputText value = "{MyBean.someProperty}"/>
+
+    The definition of the POJO can be as follows 
+
+    public class MyBean {
+
+        private String someProperty;
+
+        public String getSomeProperty() {
+            return someProperty;
+        }
+
+        public void setSomeProperty(String someProperty) {
+            this.someProperty = someProperty;
+        }
+    }
