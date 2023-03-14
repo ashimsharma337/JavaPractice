@@ -1,0 +1,56 @@
+Variable Scopes 
+
+Variable scope affects: 
+     - Visibility of variable in a class 
+     - Lifespan of the variable 
+
+Four variable scopes in java 
+     - class variable (Static)
+     - Instance variable 
+     - Local variable 
+     - block-scope variable 
+
+
+class variable 
+    - Variable declared with the static modifier 
+    - Decalred in the class body 
+    - Variable initialized when the class loads ( No instance is need )
+    - All instances share class variable 
+
+      class Person {
+        Static Planet planet;    -static variable
+        int age;                 -instance variable ( Each person has its own age )
+      }
+
+Instance variable 
+   - Each new object has its own
+   - Declared in the class body 
+   - objects are cleaned up when no longer referenced 
+   - Marked for garbage collection when object is 
+
+Local variable 
+   - Declared in the method body 
+   - Declared as a method parameter 
+   - Marked for garbage collection when the method ends 
+   - Available anywhere in the method 
+
+   public void code (Computer pc) {     -as a parameter
+          IDE ide = new IDE();          -Local variable in the method body 
+   }
+
+Block-Scope 
+   - Declared within a block of code 
+          - if statement 
+          - loops 
+          - try-catch blocks 
+   - Marked for garbage collection after the blocks ends 
+   - Not accessible in the method, only that block 
+
+   public void jump(boolean b) {
+
+         if(b) {
+            int height = 2;      - height variable only available in if block 
+         }                       - can-not be used in jump method outside if statement 
+   }
+
+
