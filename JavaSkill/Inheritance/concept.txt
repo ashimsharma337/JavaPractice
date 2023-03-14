@@ -1,0 +1,13 @@
+Inheritance 
+  - Process of passing down state and behavior from one class to another 
+  - Super-class / Sub-class relationship 
+  - Parent child relationship 
+  - Facilitates code reusability 
+  - Extensibility to change existing classes 
+
+  class Cucumber {
+    int weight;
+    public void grow(){}
+  }
+
+  class Pickle extends Cucumber {}   -- Is-A (pickle is a cucumber)
