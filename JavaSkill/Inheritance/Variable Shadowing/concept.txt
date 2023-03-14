@@ -1,0 +1,18 @@
+
+Variable Shadowing 
+
+-Variable can be shadowed 
+-Parent defines variable x and so does child 
+-Child variable x shadows the Parent variable 
+-Variable can be distinguished using super and this  
+-Local variable can shadow instance variable 
+
+Parent                ------------    child 
+int x = 10;                          int x = 5;
+
+super.x will print 10.
+this.x will print 5 in child class.
+
+public void setX(int x){
+    this.x = x;                 this.x is referencing instance variable not the parameter 
+}
