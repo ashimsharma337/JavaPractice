@@ -1,0 +1,14 @@
+Method Overriding 
+- Method with the same signature as one in a parent class 
+         public void speak(){}
+- Allows us to change behavior in a specialized class 
+- No matter the reference type, the right method is called 
+     - Due to Virtual method Invocatoin 
+- Takes precedence over the superclass method 
+     Note: only non-static methods can be overridden 
+
+- Java will always look into the heap to call a method 
+
+e.g 
+   class Animal      --------------------------->     class Dog
+   void speak() {}                                  void speak() {}
