@@ -1,0 +1,14 @@
+Polymorphism 
+- The ability for objects to be used very flexibly 
+- Covariance and Virtual Method Invocation 
+        -How Java handles overridden methods 
+- Covariant assignment must pass the Is-A check 
+
+class Animal               --------->   class Dog
+void speak() {}                         void speak() {}
+
+public void pet(Animal animal) {
+        animal.speak();
+}
+
+Making dog object, and refrencing Animal class virtually dog object will overide the method on heap memory.
