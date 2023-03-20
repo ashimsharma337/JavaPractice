@@ -1,0 +1,42 @@
+Exception Handling 
+
+Exceptions 
+Exceptional events that occur in the the code at runtime 
+- Reading a corrupted file 
+- Network connection failure 
+- Division by zero 
+- Calling method without an object 
+- Every Exception has a type 
+
+All exceptions inherits from the throwable class 
+
+Checked exceptions
+ - Compiler forces us to handle this exceptions 
+     e.g - IOException (corrupted file)
+         - ConnectException (error in connection)
+
+Unchecked exception 
+     e.g - ArthmeticException (Division by zero)
+         - NullPointerException 
+
+
+In stack, if it does not find the handler stack will terminate. Using handler stack can keep on running 
+
+Handler is a try catch block 
+  try {
+    // risky code
+  } catch (ConnectException e) {
+    // recovery procedure 
+  }
+
+   ---> Throwable <--- 
+              |    (checked)     |
+              |                  |
+              |                  |
+      ---> Exception           Error
+      |    (checked)        (unchecked)
+      |
+RuntimeException
+  (unchecked)
+
+
