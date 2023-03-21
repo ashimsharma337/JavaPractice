@@ -1,0 +1,58 @@
+Algorithms 
+ Algorithms are pieces of reusable functionality provided by java. They come form the collections class
+ and mostly operate on List instances.
+
+Bubble Sort 
+   Bubble sort is a simple sorting algorithm. It repeatedly steps through a  list, compares adjacent elements 
+   and swaps them if they are in the wrong order until the list is solved.
+   - Basic (not very efficient) sorting algorithm
+   - Sort numbers from least to greatest 
+   - Good introduction into algorithms in general 
+   - Sorts data by comparing adjacent elements 
+   - Pushes higher numbers to the end 
+   - The higher numbers "bubble" up.
+
+      5->3->10->8--------------------------------3->5->8->10
+                     This is complex 
+
+Time Complexity 
+We measure complexity using algebraic equation called Big O-Notation 
+- Big O-Notation 
+      - An algebraic equation that represents the time complexity
+      - O(N*N) == O(N^2)
+
+
+Big O is used to give an idea of how fast an algorithm will scale as input size increases
+
+O(1) means that as input size increases, the running time will not change
+
+O(n) means that as input size doubles, the running time will double, more or less
+
+O(n^2) means that as input size double, the running time will quadruple, more or less
+
+O(f(n)) means that as input size doubles, the running time will increase to around f(2n)
+
+O(1):
+
+for (int i=0; i<3; i++) {
+   System.out.println(i);
+}
+
+O(n):
+
+int n = 1000000; /* Some arbitrary large number */    
+for (int i=0; i<n; i++) {
+   System.out.println(i);
+}
+
+O(n2):
+
+int n = 1000000; /* Some arbitrary large number */    
+for (int i=0; i<n; i++) {
+   for (int j=0; j<n; j++) {
+      System.out.println(i * j);
+   }
+}
+
+
+   
