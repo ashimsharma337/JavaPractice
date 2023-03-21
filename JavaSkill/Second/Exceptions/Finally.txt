@@ -1,0 +1,27 @@
+// read a single byte from a file 
+
+try {
+    FileInputStream f = new FileInputStream("file.txt);
+    f.read();             // if read method throw an IOException, then rest of the code in this block will not execute
+    f.close();            // it will then go to catch
+    log.info("Success!");
+} catch(IOException e) {
+    log.info(e);
+}
+
+Problem in above method is that close method did not get a chance to call.
+
+So we use Finally block to overcome this problem 
+- Run after a try block regardless if an exception is thrown 
+- Useful for closing resources like files, network or database connections e.t.c 
+- Not to be confused with final key word 
+
+e.g 
+try {
+    FileInputStream f = new FileInputStream("file.txt);
+    f.read();
+} catch(IOException) {
+    log.info(e);
+} finnaly {
+    f.close();
+}
