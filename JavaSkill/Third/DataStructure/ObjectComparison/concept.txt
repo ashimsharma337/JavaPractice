@@ -1,0 +1,13 @@
+Default implementation of equals() class provided by java.lang.Object 
+compares memory location and only return true if two reference variable are pointing 
+to same memory location i.e. essentially they are same object.
+
+Java recommends to override equals and hashCode method if equality 
+is going to be defined by logical way or via some business logic: 
+
+example:
+many classes in Java standard library does override it 
+e.g. String overrides equals, whose implementation of equals() method return true 
+if content of two String objects are exactly same
+
+Integer wrapper class overrides equals to perform numerical comparison etc.

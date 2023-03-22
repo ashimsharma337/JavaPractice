@@ -1,0 +1,17 @@
+Data about object can be strucured 
+
+common data structure in java 
+
+-List 
+   - e.g. To Do list, order stays same, same thing can occur twice, we can jump in to 5th item 
+-Queue 
+   - A queue is linear data structure that consists of a collection is of items that follow a first-in-first-outsequence. 
+     This implies that the first item to be inserted will be the first to be removed. 
+     You can also say that items are removed in the order they were inserted
+     line at the ticket counter in a movie theaters 
+-Map 
+   - Key value pair, e.g dictionary word-meaning 
+-Set 
+   -unique, e.g group of friends, we can point one 
+
+We use diffrent data structure for specific type of problem 
