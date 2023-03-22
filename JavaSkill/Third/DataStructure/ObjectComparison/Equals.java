@@ -12,9 +12,9 @@ public class Equals {
 
 
 class Pizza {
-	int size = 0;
+	int size = 0;                        
 	String topping = "bacon";           // if null object method does not work 
-	public boolean equals(Object o) {   // overriding equals method 
+	public boolean equals(Object o) {   // overriding equals method , we can also generate it on IDE
 		Pizza other = (Pizza) o;
 		if(this.size == other.size) {
 			if(this.topping.equals(other.topping)) {

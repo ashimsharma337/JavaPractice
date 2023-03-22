@@ -1,3 +1,20 @@
+Object Comparision 
+       Two methods in the object class used for comparing object: equal and hashcode 
+
+Equals 
+     Every Object in java includes an equals and a hashcode method. They must be overridden to work properly.
+     They must be overridden to work properly 
+     without them, we have to create very large "if" comparisions, comparing every field from an object, making 
+     code really confusion and hard to read.
+
+Object Equality 
+- We can decide when two objects are equivalent 
+         -java.lang.Object.equals method 
+         public boolean equals (Object other)
+- By default, it checks the memory location 
+- Override the method to compare object state 
+- Some data structure require unique objects 
+
 Default implementation of equals() class provided by java.lang.Object 
 compares memory location and only return true if two reference variable are pointing 
 to same memory location i.e. essentially they are same object.
