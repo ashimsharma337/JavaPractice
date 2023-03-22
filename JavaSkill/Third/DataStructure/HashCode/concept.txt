@@ -1,0 +1,15 @@
+HashCode 
+- Used to give a consistent integer that represents the object 
+          public int hashCode()
+- Loved by HashMap, HashSet,  and others 
+- Puts objects into a smaller group to optimize searching 
+
+hashCode() is used for bucketing in Hash implementations like HashMap, HashTable, HashSet, etc.
+The value received from hashCode() is used as the bucket number for storing elements of the set/map. 
+This bucket number is the address of the element inside the set/map.
+
+When you do contains() it will take the hash code of the element, 
+then look for the bucket where hash code points to. If more than 1 element is found in the same bucket 
+(multiple objects can have the same hash code), 
+then it uses the equals() method to evaluate if the objects are equal,
+and then decide if contains() is true or false, or decide if element could be added in the set or not
