@@ -1,0 +1,40 @@
+Map 
+A Map is an object that maps unique keys to values. The Map interface includes methods for basic operations, 
+bulk operations, and collection views.
+                 Java contains three general-purpose Map implementations 
+                 a. HashMap 
+                 b. TreeMap 
+                 c. LinkedHashMap 
+
+HashMap 
+- A class in collections API that stores key-value pairs 
+- The key is used to identify the value 
+- Social Security Number maps to US Citizens 
+          5001---->Brain 
+- Keys must be unique, but there's no restrictions on values 
+- Putting a value with the same key updates the value for that key 
+          5001------updates to -----> Dave 
+- Underneath, Hashmap stores "Entry" Objects in an array 
+- Our object's hashcode helps calculate the array index to store in it 
+- HashMap collisions occur when the calculation for 2 indexes yeild the same value 
+                     - Java appends the Entry to a LinkedList 
+                     - when two entry are in same index e.g on index 2, Hash map appends another after running algorithm
+                     - iterate through the linkedList at position 2
+                       uses equal operation and compare key 
+                     - When we use key and hashmap we should override hascode and equal method 
+- HashMap underneath is array of LinkedList 
+
+- Optimized feature of Java 8
+  - If the LinkedList gets too long, read operations are much slower 
+  - Reads are typically (O1)- constant time 
+  NOTE: To maintain this, larger LinkedLists (8+) are converted to red-black trees.
+
+                     Red Black Tree 
+
+                        10               Root element 
+                         ^                    
+                      5    \            smaller element to the left and larger element to the right 
+                      ^     \
+                    2   8     15
+
+                
