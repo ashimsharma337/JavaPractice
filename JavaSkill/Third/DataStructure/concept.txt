@@ -15,3 +15,13 @@ common data structure in java
    -unique, e.g group of friends, we can point one 
 
 We use diffrent data structure for specific type of problem 
+
+Other data strucure 
+      - trees and graph
+Various algorithm such as 
+      - binary search
+      - depth-first search 
+      - merge sort 
+      - quick sort 
+      - shortest path algorithms 
+                           
