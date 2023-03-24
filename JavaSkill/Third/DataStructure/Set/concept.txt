@@ -1,0 +1,21 @@
+Set 
+A set is a collection that can-not contain duplicate elements 
+and adds a stronger contract on the behavaior of the equals 
+and hashCode operations. It allows set instances to be 
+compared meaningfully even if their implementation types.
+
+Three general purpose set implementation 
+1. HashSet 
+2. TreeSet 
+3. LinkedHashSet 
+
+HashSet 
+- A class in the collections API 
+- Stores unique objects-duplicates are not allowed 
+- Order of elements is not guaranted 
+- No index available unlike List 
+- HashSet stores values inside of a HashMap 
+
+e.g set.add("Dan");                               Key         Value 
+    set.add("Dan);                               Dan          Present 
+    set.add(""Kim);                              Kim          Present 
