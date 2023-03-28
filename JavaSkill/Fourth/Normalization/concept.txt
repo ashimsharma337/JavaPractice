@@ -1,0 +1,32 @@
+If a table has data redundancy and is not properly normalized, 
+then it will be difficult to handle and update the database, without facing data loss. 
+It will also eat up extra memory space and Insertion, Update and Deletion Anomalies are very frequent 
+if database is not normalized. 
+
+Normalization is the process of minimizing redundancy from a relation or set of relations. 
+Redundancy in relation may cause insertion, deletion and update anomalies. 
+So, it helps to minimize the redundancy in relations. 
+Normal forms are used to eliminate or reduce redundancy in database tables. 
+
+There are various level of normalization 
+
+1. First Normal Form (1NF)
+2. Second Normal Form (2NF)
+3. Third Normal Form (3NF) 
+4. Boyce-Codd Normal Form (BCNF)
+5. Fourth Normal Form (4NF)
+6. Fifth Normal Form (5NF) 
+
+Normalization 
+- Normalization reduces data redundancy to save disk space 
+- Reduces the chance of data anomalies(inaccuracy)
+- Each stage in the process of normalization is called a Normal form 
+- Most databases use one of the following 
+       - Second Normal Form (2NF)
+       - Third Normal Form(2NF)
+       - Boyce-Codd Normal Form(BCNF)
+
+
+The normalization process consists of modifying the design through different stages, 
+going from an unnormalized set of relations (tables), to the first normal form, 
+then to the second normal form, and then to the third normal form.
