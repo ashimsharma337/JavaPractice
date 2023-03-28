@@ -1,0 +1,98 @@
+3NF 
+ Third normal function(3NF) is the third step in normalizing a database. It builds on the first and second normal 
+ forms, 3NF states that all column refernces in refrenced data that are not dependent on the primary key should 
+ be removed.
+
+ Third Normal Form 
+ - No transitive Dependencies 
+      - A coulmn determined by a non-key attribute 
+ - Includes derived attribute, which should be calcualted 
+      - Your birthday detemines your age 
+      
+
+A relation is in third normal form (3NF) if and only if:
+
+It is in second normal form (2NF).
+All non-prime attributes are directly (non-transitively) dependent on the entire candidate key.
+In other words, non-prime attributes must be functionally dependent on the key(s), 
+but they must not depend on another non-prime attribute. 
+3NF non-prime attributes depend on “nothing but the key”.
+
+Let’s see a non-3NF relation:
+
+Order information
+
+order_id	date	    customer	       customer email
+1/2020	   2020-01-15	Jason White	       white@example.com
+2/2020	   2020-01-16	Mary Smith	       msmith@mailinator.com
+3/3030	   2020-01-17	Jacob Albertson	   jasobal@example.com
+4/2020	   2020-01-18	Bob Dickinson	   bob@fakemail.com
+
+Candidate key: order_id
+Non-prime attributes: date, customer, customer email
+
+Functional dependencies: date depends on order_id (order_id → date); 
+customer depends on order_id (order_id → customer), 
+and customer email depends on customer (customer → customer email).
+
+This relation does not satisfy 3NF. The only candidate key in this relation is order_id. 
+The value of customer email is functionally dependent on the customer attribute, which is a non-prime attribute. 
+Thus, the relation violates 3NF.
+
+Once again, we split this into two relations: 
+Orders (with the attributes order_id, date, and customer) 
+and Customers (with the attributes customer and customer email):
+
+Orders
+
+order_id	        date	      customer
+1/2020	         2020-01-15	     Jason White
+2/2020	         2020-01-16	     Mary Smith
+3/3030	         2020-01-17	     Jacob Albertson
+4/2020	         2020-01-18	     Bob Dickinson
+Customers
+
+customer	           customer email
+Jason White	           white@example.com
+Mary Smith	           msmith@mailinator.com
+Jacob Albertson        jasobal@example.com
+Bob Dickinson	       bob@fakemail.com
+Orders is in 3NF because the date and customer attributes do not violate the rule of 3NF; 
+their values depend on the order_id number. 
+Customers is in 3NF because customer email is functionally dependent on customer, 
+which is the candidate key of this relation. 
+In both cases, all non-prime attributes depend on the candidate key.
+
+Let’s see one more non-3NF example.
+
+Courses
+
+course	             year	      teacher	          teacher date of birth
+Databases	         2019	      Chris Cape	      1974-10-12
+Mathematics	         2019	      Daniel Parr	      1985-05-17
+Databases	         2020	      Jennifer Clock	  1990-06-09
+Candidate key: {course, year}
+Non-prime attributes: teacher, teacher date of birth
+Functional dependencies: teacher depends on course and year (course, year → teacher); 
+teacher date of birth depends on teacher (teacher → teacher date of birth)
+This relation does not satisfy 3NF. 
+The only candidate key in this relation is {course, year}, 
+but the value of teacher date of birth is functionally dependent on teacher – a non-prime attribute. 
+This violates 3NF.
+
+Guess how we’ll transform this into 3NF? That’s right; we split the relation. 
+Courses gets the attributes course, year, and teacher; 
+Teachers gets the attributes teacher and teacher date of birth:
+
+Courses
+
+course	                 year	teacher
+Databases	             2019	Chris Cape
+Mathematics	             2019	Daniel Parr
+Databases	             2020	Jennifer Clock
+Teachers
+
+teacher	          teacher date of birth
+Chris Cape	      1974-10-12
+Daniel Parr	      1985-05-17
+Jennifer Clock

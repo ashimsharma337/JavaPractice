@@ -1,0 +1,117 @@
+2NF 
+Second normal form (2NF) is used in database normalization. A relation is in the second normal form if and only if 
+it fullfills the following requirement 
+
+- It is in 1NF 
+- It does not have any non-prime attibute that if functionally dependent on any proper subset of any candidate 
+  key of the relation 
+
+
+concept to understand second Normal form 
+
+Functional Dependencies                                           Composite key
+- one value(column) determines another                       - Two or more column primary key 
+- Your birthday determines your age                            (together they act as a primary key )
+- Order number determines the date the 
+  date the order was placed 
+- First name does not determine anything 
+- No Partial dependencies 
+     - A column determined by only part of the priamry key
+
+
+NOTE: A Foreign Key constraint is a field ( or collection of fields ) in one table, that refers to the Primary key in another table.
+
+
+
+A candidate key is a minimal set of attributes that determines the other attributes included in the relation. 
+It’s minimal in that if you removed one attribute, the remaining attributes do not form a candidate key. 
+
+A non-prime attribute is an attribute that is not part of the candidate key. 
+However, for a relation to be 2NF, the information stored by non-prime attributes must be related to the whole information in the candidate key.
+
+Informally, the second normal form states that all attributes must depend on the entire candidate key.
+
+Let’s see an example of a relation that does not satisfy 2NF. The underlined attributes are the candidate key.
+
+Bike parts warehouse
+
+part	                       supplier	            quantity	            supplier country
+Saddle	                       Bikeraft	            10	                       USA
+Brake lever                    Tripebike	          5	                         Italy
+Top tube	                     UpBike	              3	                         Canada
+Saddle	                       Tripebike	          8	                         Italy
+
+The candidate key is the part and supplier set, which is expressed like this {part, supplier}.
+The non-prime attributes (which are not part of the candidate key) are quantity and supplier country.
+
+There are functional dependencies between part, supplier, and quantity (expressed as part, supplier → quantity ) 
+and between supplier and supplier country (expressed as supplier → supplier country).
+
+Why doesn’t this satisfy 2NF? The set {part, supplier} is the only candidate key of this relation. 
+The value of supplier country is functionally dependent on supplier. 
+Supplier country is not part of the candidate key, 
+so it is a non-prime attribute and it is functionally dependent on part of the candidate key, 
+not the entire candidate key {part, supplier}.
+
+To transform this relation into 2NF, we need to split it into 
+two relations: Bike parts (with the attributes part, supplier, and quantity) 
+and Suppliers (with the attributes supplier and supplier country). This would look like as follows:
+
+Bike parts
+
+part	                                      supplier	                     quantity
+Saddle	                                      Bikeraft	                     10
+Brake lever	                                  Tripebike	                     5
+Top tube	                                  UpBike	                     3
+Saddle	                                      Tripebike	                     8
+
+The relation Bike parts is in 2NF because, as before, 
+the quantity attribute depends on the pair supplier and part.
+
+Suppliers
+
+supplier	       supplier country
+Bikeraft	       USA
+Tripebike	       Italy
+UpBike	           Canada
+
+The Suppliers relation is in 2NF because supplier country is functionally dependent on supplier, 
+which is the candidate key of this relation.
+
+Let’s see one more example of a non-2NF relation.
+
+Student course fees
+
+student	                           course	    grade	course fee
+Alison Brown	                   Databases	A	    $100
+Jason Liu	                       Mathematics	B       $150
+Mariah Hill	                       Databases	B+	    $100
+
+Candidate key: {student, course}
+Non-prime attributes: grade, course fee
+Functional dependencies: student, course → grade; course → course fee
+The following relation does not satisfy 2NF. The set {student, course} is the relation’s candidate key,
+but the value of course fee is functionally dependent on course alone. 
+Course fee is a non-prime attribute, which is functionally dependent on only part of the candidate key.
+
+To transform this into 2NF, we again split it into two relations: 
+Student courses (with the attributes student, course, and grade) 
+and Courses (with the attributes course and course fee). 
+, we avoid the partial dependency in the non-2NF relation above.
+
+Student course
+
+student	                       course	    grade
+Alison Brown	               Databases	A
+Jason Liu	                   Mathematics	B
+Mariah Hill	                   Databases	B+
+Courses
+
+course	        course fee
+Databases	    $100
+Mathematics	    $150
+Why not try verifying for yourself that these relations are indeed 2NF?
+
+Note that the 2NF partial dependency rule only kicks in if your relation has a composite candidate key 
+(i.e. one that consists of multiple attributes). 
+All relations that have a single-attribute key are by definition in 2NF.

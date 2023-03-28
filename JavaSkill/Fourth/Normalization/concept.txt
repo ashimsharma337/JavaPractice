@@ -30,3 +30,29 @@ Normalization
 The normalization process consists of modifying the design through different stages, 
 going from an unnormalized set of relations (tables), to the first normal form, 
 then to the second normal form, and then to the third normal form.
+
+- Edgar F. codd released his landmark paper in 1970 
+        - A Relational Model of Data for large shared Data Banks 
+- known as the father of the relational database model 
+- Mnemonic for remembering the normal form 
+
+
+The Key                            The whole Key           Nothing but the key             so help me codd 
+1NF                                2NF                     3NF                             BCNF 
+key                                Partial dependency      Transitive                      Stronger version of 3NF 
+                                                           dependency                      (look up table)   
+
+
+Database Normalization: Summary
+First, second, and third normal forms are the basic normal forms in database normalization:
+
+The first normal form (1NF) states that each attribute in the relation is atomic.
+
+The second normal form (2NF) states that non-prime attributes must be functionally 
+dependent on the entire candidate key.
+
+The third normal form (3NF) states that non-prime attributes must be directly 
+(non-transitively) dependent on candidate keys.
+
+Third normal schema Link 
+https://docs.oracle.com/database/121/DWHSG/ch2logdes.htm#DWHSG9290
