@@ -1,0 +1,47 @@
+First Normal Form (1NF)
+A relation is in first normal form (1NF) if (and only if):
+
+Each attribute contains only one value.
+All attribute values are atomic, which means they can’t be broken down into anything smaller.
+
+In practice, 1NF means that you should not have lists or other composite structures as attribute values. 
+Below is an example of a relation that does not satisfy 1NF criteria:
+
+Student courses
+
+student	                                  courses
+Jane Smith	                       Databases, Mathematics
+John Lipinsky	                   English Literature, Databases
+Dave Beyer	                       English Literature, Mathematics
+
+This relation is not in 1NF because the courses attribute has multiple values. 
+Jane Smith is assigned to two courses (Databases and Mathematics), 
+and they are stored in one field as a comma-separated list. 
+This list can be broken down into smaller elements 
+(i.e. course subjects: databases as one element, mathematics as another), so it’s not an atomic value.
+
+To transform this relation to the first normal form, 
+we should store each course subject as a single value, 
+so that each student-course assignment is a separate tuple:
+
+Student courses
+
+student	                                       course
+Jane Smith	                                 Databases
+Jane Smith	                                 Mathematics
+John Lipinsky	                             English Literature
+John Lipinsky	                             Databases
+Dave Beyer	                                 English Literature
+Dave Beyer	                                 Mathematics
+
+
+- No repeating groups(multi-valued column)
+               - Only one value per column 
+- Table must be define a primary key 
+               - A unique identifier for a row 
+- Given a data set, you find a candidate keys 
+               - A resonable choice for a primary key 
+               - A candidate key is a minimal set of attributes that determines the other attributes 
+                 included in the relation. It’s minimal in that if you removed one attribute, 
+                 the remaining attributes do not form a candidate key
+- If none exit, create one called a surrogate key 
