@@ -20,3 +20,5 @@ ERD(Entity-Relationship Diagram)
 - are contected each other with crows foot notation to show many-to-many, one-to-many e.t.c relationship 
 
 NOTE: Junction Table, Join table, Associative entity resolve many-to-many relationship by mapping 
+
+NOTE: use Sakila schema to practice 
