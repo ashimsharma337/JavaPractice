@@ -22,7 +22,7 @@ Normalization
 - Reduces the chance of data anomalies(inaccuracy)
 - Each stage in the process of normalization is called a Normal form 
 - Most databases use one of the following 
-       - Second Normal Form (2NF)
+       - Second Normal Form (2NF)    
        - Third Normal Form(2NF)
        - Boyce-Codd Normal Form(BCNF)
 
