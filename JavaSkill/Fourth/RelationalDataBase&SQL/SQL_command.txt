@@ -31,4 +31,4 @@ SQL commands are mainly categorized into five categories as:
         SET TRANSACTION: Specifies characteristics for the transaction.
 
 Useful Links: 
-Sql command: https://www.databasestar.com/dml-ddl-tcl-commands/
+Sql command: https://www.databasestar.com/dml-ddl-tcl-commands/ 
