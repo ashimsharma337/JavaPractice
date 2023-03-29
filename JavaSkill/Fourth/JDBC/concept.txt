@@ -1,0 +1,58 @@
+The JDBC API is a Java API that can access any kind of tabular data, 
+especially data stored in a relational database.
+
+Fundamentally, applications written in Java perform logic. 
+The Java language provides facilities for performing iterative logic with looks, 
+conditional logic with if statements and object-oriented analysis through the use of classes and interfaces.
+But Java applications do not store data persistently. 
+Data persistence is typically delegated to NoSQL databases such as MongoDB and Cassandra, 
+or to relational databases such as IBM’s DB2 or Microsoft’s SQL Server or the popular open source database MySQL.
+
+JDBC interfaces, classes and components
+The JDBC API is composed of a number of interfaces and classes that represent a connection to the database, provide facilities for sending SQL queries to a database and help Java developer process the results of relational database interactions.
+
+Common JDBC API classes and interfaces
+
+java.sql.Connection
+
+Represents a connection from the Java program to the external database system
+
+java.sql.Statement
+
+Used to issue raw SQL statements to a relational database
+
+java.sql.PreparedStatement
+
+Used to issue precompiled SQL statements to a relational database
+
+java.sql.ResultSet
+
+Represents the results returned from a relational database after an SQL statement has been processed
+
+java.sql.Blob
+
+The blob represents a database filed containing a large binary object such as an image or a video. 
+
+When a Java wants to connect to a database, it calls upon a JDBC interface known as the DriverManager, 
+which loads a driver that has been written specifically by the vendor of the database 
+to which the Java program is connecting. 
+This driver contains all of the information required to connect the Java program to the underlying database. 
+The JDBC driver is vendor specific, so the MySQL JDBC driver is different from the Apache Derby JDBC driver. 
+The job of these drivers is to address differences between databases at the technical level, 
+abstract them away from the application, and allow Java developers to be confidence 
+that the JDBC API they interact with will work with any JDBC compliant database.
+
+How to connect to a database with JDBC
+The basic steps to connect to a JDBC database are:
+
+1. Load the right JDBC driver
+2. Obtain the database URL
+3. Use the JDBC DriverManger to connect to the database
+4. Create a SQL based Statement or PreparedStatement object
+5. Execute the statement against the database
+6. Process the results and handle any SQL exceptions
+7. Close any database connections or resources no longer in use
+
+Some usefull Links: 
+Oracle: https://docs.oracle.com/javase/tutorial/jdbc/index.html
+theserverside: https://www.theserverside.com/definition/Java-Database-Connectivity-JDBC
