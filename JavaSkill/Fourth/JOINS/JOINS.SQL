@@ -111,3 +111,6 @@ SELECT *
 FROM CUSTOMER LEFT JOIN RENTAL 
 ON CUSTOMER.CUSTOMER_ID = RENTAL.CUSTOMER_ID
 WHERE RENTAL.RENTAL_ID IS NULL;
+
+-- Some useful links 
+-- JOINS: https://dev.mysql.com/doc/refman/8.0/en/join.html
