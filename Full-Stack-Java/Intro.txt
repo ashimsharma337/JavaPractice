@@ -1,0 +1,21 @@
+Things to do:
+1. Building front-end - HTML, CSS and Javascript 
+2. Connecting web browser to bacckend Java code using AJAX and Servlets 
+3. Technology used: 
+            - Spring 
+            - Spring Boot 
+            - Angular 
+    NOTE: The basic doesn't change much when learning another stack 
+            - MEAN Stack 
+            - .Net core 
+            - Full-stack python 
+To Do: 
+1. Develop forms and tables in HTML to capture and display data. 
+2. Apply styling to a webpage using css and bootstrap 
+3. Implement event handling, Ajax and DOM 
+4. Understand full-stack Web application architecture(client-server or 3-tier architecture) and HTTP 
+5. Develop Java Servlets to handle incoming HTTP request to the server containing a JSON payload 
+   and deliver HTTP responses containing JSON data 
+6. Connect Java applications to a relational database using JDBC to query and insert rows 
+7. Develop a modern back-end API using Spring Boot, Spring Data JPA 
+8. Create a front-end single-page application using Angular 
