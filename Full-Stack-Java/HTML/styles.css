@@ -1,0 +1,19 @@
+h1 {
+    color: #f78f20;
+    text-align: center;
+    padding: 50px;
+}
+
+h2 {
+    color: #177070;
+}
+
+/*
+ References: 
+    Cascading Style Sheets: https://developer.mozilla.org/en-US/docs/Web/CSS
+    CSS Syntax:             https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+    Selectors:              https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors
+    Properties:             https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#index
+    Box Model:              https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model
+
+/
