@@ -1,0 +1,24 @@
+<html>
+    <body>
+         <div><button id="get-fact">Facts</button></div>
+         <div id="fact-box"></div>
+    </body>
+    <script>
+        document.getElementById("get-fact").addEventListener("click", function(){
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "https://cat-fact.herokuapp.com/facts");
+            // during HTTP call, this is called multiple times because there is 5 ready state 
+            xhr.onreadystatechange = function(){
+                // state 4 is important 
+                if(xhr.readyState === 4){
+                    var data = JSON.parse(xhr.responseText);
+                    // console.log(data);
+                    var randomIndex = Math.floor(Math.random() * data.length);
+                    var fact = data[randomIndex].text;
+                    document.getElementById("fact-box").innerText = fact;
+                }
+            }
+            xhr.send(); // if we are doing post request send function allows us to send body of the request
+        });
+    </script>
+</html>

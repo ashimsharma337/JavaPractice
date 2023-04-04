@@ -1,0 +1,77 @@
+Web Technology 
+
+We will see how distributed system and full-stack web application operate.
+
+Topics covered: 
+
+Postman Installation: 
+        Popular tool for testing API's over the web, hepls to create HTTP messages, send these calls to server 
+        we can review the response, and sutomate these test.
+        Link to Download postman: https://www.postman.com/downloads/
+Client-Server Architecture: 
+        In a modern distributed system, pieces of the application are running on separate physical compuuters.
+        When we look for a product to buy online, we are accessing a website. it's just HTML, CSS and javascript 
+        that is downloaded to our machine by our web browser. we now have a piece of the application running 
+        on our machine PRESENTATION LAYER. All the code related to the user interface running on our computer. 
+                      Server are big, expensive machines with the mountains of processing power needed to run 
+                      big bussiness. We also aren't confined to using languages used, including Java, C# and Python. 
+        The Java EE platform
+        Presentation Layer uses a distributed multi-tiered application model for enterprises application.
+            - Code realted to UI 
+            (client-tier components run on the client machine)
+        Web Tier 
+            - Code that handles Web/HTTP traffic 
+            (Web-tier components run on the Java EE server)
+        Bussiness Tier/Application Tier 
+            - Code related to functionality/Use case 
+            (Bussiness-tier compenents run on the Java EE server)
+        Database Tier 
+            - Code related to accesing/storing data 
+        Links: https://docs.oracle.com/javaee/7/tutorial/overview003.htm#BNAAY
+
+Hypertext Transfer Protocol(HTTP)
+        - is a protocol used for fetching resources over the internet 
+        - To request data from a server to update page 
+        - Used to integrate servers with other server using API's 
+            method path version of protocol 
+        e.g GET/HTTP/1.1                                    Post has body 
+            Host developer.mozzila.org   Headers 
+            Accept-language fr 
+
+            status code 
+            1. Informational responses (100-199)
+            2. Successful responses (200-299)
+            3. Redirectional messages (300-399)
+            4. Client error responses (400-499)
+            5. Server error responses (500-599)
+
+            Links: 
+            HTTP:               https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview
+            HTTP Status Codes:  https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+            HTTP References:    https://developer.mozilla.org/en-US/docs/Web/HTTP
+
+Client-Side vs Server-Side Rendering 
+Server-side: 
+Server generate a web page and send back HTML to the client-side zero work for the client-side to complete.
+Client-side: 
+       Once page loads only need to update a piece of the page. React, angular uses this.
+
+Links: https://web.dev/rendering-on-the-web/ 
+
+Asynchronous JavaScript and XML (AJAX) 
+            - Uses JavaScript to send an HTTP request to server 
+            - server sends back XML data in the response(or more commonly JSON)
+            - Javascript can manipulate DOM with that data 
+
+            Ajax is not a technology is not a technology in itself, but rather an approach to using 
+            a number of existing technology together, including HTML, XHTML, CSS, Javascript DOM, XML, XSLT 
+                        The XMLHttpRequest API is the core of AJAX 
+            The core object used in Ajax is the XMLHttpRequest object, though we can easily make this work 
+            easily make this work easier by using popular Ajax library, such as 
+            Fetch API, jQuery, Axios, HTTP modules available in framework like Angular 
+
+            Link: 
+            Ajax Guide:                https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX 
+            Getting Started with Ajax: https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX/Getting_Started 
+            Free Public API's:         https://github.com/public-apis/public-apis   
+            example:                   https://my-json-server.typicode.com/skillstorm-walsh/employees-v1/employees  
