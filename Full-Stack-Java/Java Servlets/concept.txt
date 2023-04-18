@@ -1,0 +1,28 @@
+Servlet 
+A Servlet is a small java program that runs within a Web server. 
+Servlets receive and respond to requests from Web clients, usually across HTTP. 
+
+Execution of Servlets basically involves six basic steps: 
+
+The clients send the request to the webserver.
+The web server receives the request.
+The web server passes the request to the corresponding servlet.
+The servlet processes the request and generates the response in the form of output.
+The servlet sends the response back to the webserver.
+The web server sends the response back to the client and the client browser displays it on the screen.
+
+The Servlet technology is similar to other Web server extensions such as 
+Common Gateway Interface(CGI) scripts(C, C++),
+Hypertext Preprocessor (PHP),
+Expressjs(Node) e.t.c
+
+We can use servlets to create APIs that serve up raw data to client machines and other server-side applications. 
+Alternatively, we can have a servlet generate a page using JSP, JSF, or similar server-side rendering frameworks.
+
+LINKS: 
+Servlet:                  https://docs.oracle.com/javaee/6/tutorial/doc/bnafe.html
+WebServlet Annotation:    https://docs.oracle.com/javaee/6/tutorial/doc/bnafu.html
+doGet and doPost Methods: https://docs.oracle.com/javaee/6/tutorial/doc/bnafv.html
+Servlet Interface:        https://docs.oracle.com/javaee/6/tutorial/doc/bnafv.html
+HttpServlet class:        https://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpServlet.html
+Deployment to Tomcat:     https://tomcat.apache.org/tomcat-8.5-doc/appdev/deployment.html
