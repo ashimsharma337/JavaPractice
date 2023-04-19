@@ -1,0 +1,63 @@
+Ajax 
+Ajax itself is mostly a generic term for various JavaScript techniques used 
+to connect to a web server dynamically without necessarily loading multiple pages. 
+In a more narrowly-defined sense, 
+it refers to the use of XmlHttpRequest objects to interact with a web server dynamically via JavaScript.
+
+Ajax is commonly used in web applications to implement features such as auto-complete search fields, real-time chat 
+and dynamic forms. It has become an essentail tool in modern web development, and many popular JavaScript libraries 
+such as jQuery, React, and Angular include built-in support for Ajax.
+
+// create an XHR object
+const xhr = new XMLHttpRequest()
+
+// listen for `onload` event
+xhr.onload = () => {
+  // process response
+  if (xhr.status == 200) {
+    // parse JSON data
+    console.log(JSON.parse(xhr.response))
+  } else {
+    console.error('Error!')
+  }
+}
+
+// create a `GET` request
+xhr.open('GET', 'https://jsonplaceholder.typicode.com/users')
+
+// send request
+xhr.send()
+
+NOTE: Old browsers use the xhr.onreadystatechange instead of xhr.onload 
+
+Servlet 
+A servlet is simply a class which responds to a particular type of network request - most commonly an HTTP request. 
+Basically servlets are usually used to implement web applications 
+- but there are also various frameworks which operate on top of servlets (e.g. Struts) 
+to give a higher-level abstraction than the "here's an HTTP request, write to this HTTP response" level 
+which servlets provide.
+Servlets run in a servlet container which handles the networking side (e.g. parsing an HTTP request, 
+connection handling etc). One of the best-known open source servlet containers is Tomcat.
+
+How does the Container know which Servlet client has requested for?
+
+-There’s a file called web.xml
+-This is the master file for a web container
+-You have information about servlet in this file-
+
+servlets
+    Servlet-name
+    Servlet-class
+servlet-mappings- the path like /Login or /Notifications is mapped here in
+    Servlet-name
+    url-pattern
+and so on
+-Every servlet in the web app should have an entry into this file
+
+So this lookup happens like- url-pattern -> servlet-name -> servlet-class
+How to "install" Servlets? * Well, the servlet objects are inherited from the library- javax.servlet.* . 
+Tomcat and Spring can be used to utilize these objects to fit the use case.
+
+Servlet can be deployed on any web server that supports the java Servlet API, such as Apache Tomcat, Jetty, 
+or JBoss. They are often used in conjunction with JavaServer Pages (JSPs) to create dynamic web appplications 
+using the Model-View-Controller (MVC) architecture. 
