@@ -26,3 +26,94 @@ doGet and doPost Methods: https://docs.oracle.com/javaee/6/tutorial/doc/bnafv.ht
 Servlet Interface:        https://docs.oracle.com/javaee/6/tutorial/doc/bnafv.html
 HttpServlet class:        https://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpServlet.html
 Deployment to Tomcat:     https://tomcat.apache.org/tomcat-8.5-doc/appdev/deployment.html
+
+The Web server (Tomcat) passes the incoming HTTP requests to the servlet container, 
+which then parses the HTTP messages 
+and creates a few Java objects for us: the HttpServletRequest and HttpServletResponse objects 
+(we'll call them request and response). 
+The servlet container invokes the appropriate service method (doGet, doPost, etc.) 
+on the appropriate servlet and passes these objects over. 
+From there, it's up to us to do something with that request. 
+We have access to the HTTP request, and we prepare the HTTP response that will be sent back. 
+A few methods we will use frequently include: request.getParameter, request.getBody, and response.getWriter.
+As a full-stack Java developer, it's important to understand the HTTP protocol 
+and how to use these methods to work with HTTP messages.
+
+The initial idea of Apache tomcat software was to host and deploy the Java servlet 
+that is the server-side Java code that manages HTTP results from client applications build using Java. 
+It acts as a web server rather than a full-fledged application server that includes data persistence and load balancing capabilities.
+
+Apache tomcat may be defined as a web server (that is also referred to as a web container/ servlet container), 
+which processes the servlets, JSP’s (by internally converting your JSP’s to servlets internally), 
+and also render JSP’s.
+
+A web server is responsible for processing servlets and JSP’s, 
+whereas an application server should be able to process sturts, 
+EJB’s(Enterprise Java Beans), JSF (Java Server Faces) along with servlets and JSP’s. 
+Tomcat can process only servlets and JSP’s, thus making it a web server.
+Tomcat alternatives: F5 NGINX, Oracle Weblogic, Glassfish, Jetty, Wildfly e.t.c 
+
+Application servers physically or virtually sit between database servers storing application data 
+and web servers communicating with clients. 
+App servers and akin middleware are the operating systems supporting an application’s development and delivery. 
+Whether it’s a desktop, mobile, or web app, application servers play a critical role in connecting a world of devices.
+
+Application server terminology
+Term	                Description
+Web server:     	Responsible for storing, processing, and delivering data I/O for web pages
+Web client:     	Endpoint attempting to access web or application resources
+HTTPS:           	Communication protocol between web server and web clients
+Servlet/JSON:   	Language for exchange between web and application servers
+Business logic: 	Rules for data storage and transfer of application resources
+Application:    	A software program or website attached to a database 
+
+Why Do We Need Application Servers?
+Billions of web clients make HTTP requests every day, expecting instant access to you-name-the-app. 
+Headspace during the morning routine, Google Docs for the extensive report, Twitter during a coffee break, 
+no matter the application in use, it’s being pulled from an application server and delivered via a web server.
+
+Web servers are responsible for serving web clients HTTP requests with HTTP responses. 
+Unlike app servers, the web server design is light enough to process static data requests 
+for multiple applications (or websites) while maintaining security. Dynamic requests, 
+often in the form of applications, require additional assistance.
+
+Steps: 
+         HTTP req                                 Servlet Req
+Client --------------------> Application Server --------------------> Database
+       <-------------------                     <------------------- 
+         HTTP res                                 Servlet Res 
+
+1. The client opens a browser and requests access to a website
+2. The web server receives the HTTP request and responds with the desired webpage
+3. The web server handles static data requests, but the client wants to use an interactive tool
+4. As a dynamic data request, the web server transfers the request to an application server
+5. The application server receives the HTTP request and converts it into a servlet request
+6. The servlet reaches the database server, and the app server receives a servlet response
+7. The app server translates the servlet response into HTTP format for client access
+
+
+Servlet annotation examples
+@WebServlet
+To declare a servlet.
+
+@WebInitParam
+To specify an initialization parameter.
+
+
+@WebFilter
+To declare a servlet filter.
+
+Servlets are Java classes that conform to the Java Servlet API, 
+which allows a Java class to respond to requests. 
+Although servlets can respond to any type of request, 
+they are most commonly written to respond to web-based requests. 
+A servlet must be deployed to a Java servlet container in order to become usable.
+
+Although many developers use servlet frameworks such as Java Server Pages (JSP) 
+and Java Server Faces (JSF), both of those technologies compile pages into Java servlets 
+behind the scenes via the servlet container. 
+That said, a fundamental knowledge of Java servlet technology could be very useful for any Java web developer.
+Three methods are central to the life cycle of a servlet. 
+These are init(), service(), and destroy(). 
+They are implemented by every servlet and are invoked at specific times by the runtime.
+
