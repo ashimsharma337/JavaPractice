@@ -42,4 +42,8 @@ public class HomeServlet extends HttpServlet{
  *  HttpServletResponse: https://docs.oracle.com/javaee/6/api/javax/servlet/http/HttpServletResponse.html
  *  ServletRequest:      https://docs.oracle.com/javaee/6/api/javax/servlet/ServletRequest.html
  *  ServletResponse:     https://docs.oracle.com/javaee/6/api/javax/servlet/ServletResponse.html
+ * 
+ *  Jackson has been known as "the Java JSON library" or "the best JSON parser for Java". 
+ *  Or simply as "JSON for Java"
+ *  Link: https://github.com/FasterXML/jackson
  */
