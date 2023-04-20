@@ -1,0 +1,19 @@
+package data;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import beans.Home;
+
+// Data Access Object: CRUD // this class is responsible for handling JDBC 
+public class HomeDAO {
+
+}
+
+interface HomeDAOInterface {
+	// create 
+	public boolean save(Home home) throws SQLException;
+	
+	// get 
+	public List<Home> findAll() throws SQLException;
+}

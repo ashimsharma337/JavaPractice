@@ -1,0 +1,41 @@
+package data;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.List;
+
+import beans.Home;
+
+// Data Access Object: CRUD // this class is responsible for handling JDBC 
+public class HomeDAO implements HomeDAOInterface{
+    
+	private Connection connection;
+	
+	public void connect() {
+		String url = "jdbc:mysql://localhost:3306/homebuyer";
+		String user = "root";
+		String password = "password";
+	}
+	
+	
+	@Override
+	public boolean save(Home home) throws SQLException {
+		
+		return false;
+	}
+
+	@Override
+	public List<Home> findAll() throws SQLException {
+		
+		return null;
+	}
+
+}
+
+interface HomeDAOInterface {
+	// create 
+	public boolean save(Home home) throws SQLException;
+	
+	// get 
+	public List<Home> findAll() throws SQLException;
+}

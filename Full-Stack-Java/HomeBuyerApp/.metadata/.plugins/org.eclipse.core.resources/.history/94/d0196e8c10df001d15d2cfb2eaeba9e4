@@ -1,0 +1,6 @@
+package data;
+
+// Data Access Object: CRUD // this class is responsible for handling JDBC 
+public class HomeDAO {
+
+}

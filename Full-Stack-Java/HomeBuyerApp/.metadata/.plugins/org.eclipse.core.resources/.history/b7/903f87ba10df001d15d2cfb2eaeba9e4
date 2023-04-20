@@ -1,0 +1,18 @@
+package data;
+
+import java.util.List;
+
+import beans.Home;
+
+// Data Access Object: CRUD // this class is responsible for handling JDBC 
+public class HomeDAO {
+
+}
+
+interface HomeDAOInterface {
+	// create 
+	public boolean save();
+	
+	// get 
+	public List<Home> findAll();
+}
