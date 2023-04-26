@@ -1,0 +1,100 @@
+The JDBC stands for Java Database Connectivity. 
+JDBC is a Java database API that was created as an industry standard for making connections 
+between Java applications and other databases. 
+The Java JDBC connection in Java API defines all classes that handle various aspects of the database, 
+such as connection details, result sets, and database metadata. 
+JDBC was inspired by ODBC(Open Database Connectivity).
+
+
+LINK: 
+JDBC:          https://docs.oracle.com/javase/tutorial/jdbc/overview/index.html
+
+What is DAO(Data Access OBJECT)?
+
+It is a object/interface, which is used to access data form database of data storage.
+The Data Access Object (DAO) pattern is a structural pattern that allows us to isolate 
+the application/business layer from the persistence layer (usually a relational database 
+but could be any other persistence mechanism) using an abstract API.
+
+The API hides from the application all the complexity of performing CRUD operations in 
+the underlying storage mechanism. This permits both layers to evolve separately without 
+knowing anything about each other.
+
+Dao clases are used to reuse the jdbc logic & Dao(Data Access Object) is a design pattern. dao is a simple java class which contains JDBC logic .
+
+Data Access Layer has proven good in separate business logic layer and persistent layer. The DAO design pattern completely hides the data access implementation from its clients
+
+The Java Data Access Object (Java DAO) is an important component in business applications. 
+Business applications almost always need access to data from relational or object databases 
+and the Java platform offers many techniques for accessingthis data. 
+The oldest and most mature technique is to use the Java Database Connectivity (JDBC)API, 
+which provides the capability to execute SQL queries against a databaseand then fetch the results, 
+one column at a time.
+
+Much of the logic we will write for interacting with the database is highly reusable. 
+The Data Access Object design pattern is a core J2EE pattern that implements logic for storing and manipulating data.
+In DAO classes, we will find what we call CRUD logic: create-retrieve-update-delete. 
+More intelligent classes will focus on what we do with the data, 
+but the DAO's job is very straight-forward: save records and fetch them. 
+This approach allows for the highest level of reuse for business objects (aka service classes) 
+and keeps other classes from having to write SQL, JDBC, and other data-centric code.
+
+LINK: 
+DAO: https://www.oracle.com/java/technologies/dataaccessobject.html
+
+Connecting to Database 
+In order to sen SQL command to the database, we need to established a secure connection to the database. 
+we need the database URL and send it a valid username/password cobination to login.
+LINK: 
+Establishing connection:  https://docs.oracle.com/javase/tutorial/jdbc/basics/connecting.html
+Connection Documentation: https://docs.oracle.com/javase/7/docs/api/java/sql/Connection.html
+
+PreparedStatement:
+PreparedStatement is a interface in JDBC that compiles SQL in your Java code 
+and sends these instructions to the database for processing. 
+With PreparedStatement, we can query the database, update records, 
+and perform just about any SQL commands we want--all within Java.
+
+PreparedStatement inherits from the Statement interface but is more appropriate 
+for creating a query that takes parameters. For example, a user might search 
+for an item by typing into a text box on the user interface. 
+This string is used as part of the SQL query to find the item. 
+Because Statement does not allow for parameterized queries, 
+it's more likely you'll be relying primarily on PreparedStatement to talk to the database.
+
+Statement is used for static queries like DDLs i.e. create,drop,alter 
+and prepareStatement is used for dynamic queries i.e. DML query.
+
+In Statement, the query is not precompiled 
+while in prepareStatement query is precompiled, because of this prepareStatement is time efficient.
+prepareStatement takes argument at the time of creation
+while Statement does not take arguments. 
+For Example if you want to create table and insert element then :: Create table (static) by using Statement 
+and Insert element (dynamic)by using prepareStatement.
+
+LINK: 
+Using Prepared Statement: https://docs.oracle.com/javase/tutorial/jdbc/basics/prepared.html
+Documentation:            https://docs.oracle.com/javase/7/docs/api/java/sql/PreparedStatement.html
+
+ResultSet: 
+java.sql.Statement interface in JDBC API is used to execute a static SQL statement 
+and returning the result of the executed query. 
+Statement interface has two sub-interfaces CallableStatement and PreparedStatement.
+
+Java ResultSet interface is a part of the java.sql package. 
+It is one of the core components of the JDBC Framework. 
+ResultSet Object is used to access query results retrieved from the relational databases.
+
+The ResultSet object represents the rows returned from a query to the database. 
+When calling the ResultSet.next method, 
+we can move through rows in the result set and access the columns by using a variety of getter methods. 
+With ResultSet, we can read the results of a query and get this data doing something useful for our application.
+
+Retrieving Values from Result Sets:   https://docs.oracle.com/javase/tutorial/jdbc/basics/retrieving.html
+ResultSet Documentation:              https://docs.oracle.com/javase/7/docs/api/java/sql/ResultSet.html
+
+In modern Web applications, it's very common to see back-end APIs designed with a controller-service-DAO pattern. 
+Controllers handle the HTTP and Web side of things, 
+Services handle the more complex application logic that meet the business need, 
+and DAOs handle the basic database CRUD logic. 
+You'll also see many applications preferring the (very similar to DAO) Repository design pattern.
