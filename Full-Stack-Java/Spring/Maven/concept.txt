@@ -1,0 +1,65 @@
+Maven is a powerful project management tool that is based on POM (project object model). 
+It is used for project build, dependency, and documentation.
+
+Maven repositories are directories of packaged JAR files with some metadata. 
+The metadata are POM files related to the projects each packaged JAR file belongs to, 
+including what external dependencies each packaged JAR has. 
+This metadata enables Maven to download dependencies of your dependencies 
+recursively until all dependencies are download and put into your local machine
+
+Three Java build automation tools that dominated the JVM ecosystem – Ant, Maven, and Gradle.
+
+A JAR (Java Archive) is a package file format typically used to aggregate many Java class files 
+and associated metadata and resources (text, images, etc.) 
+into one file to distribute application software or libraries on the Java platform. 
+
+In addition to the jar, there are also other Java-related archives:
+
+WAR (Web Application aRchive) - contains in imagine a web app
+EAR (Enterprise Application aRchive) - contains an enterprise application (usually consisting of several modules)
+APK (Android aPplication pacKage) - contains an Android app 
+
+Diffrence between Maven and npm 
+Maven in its purest form follows a declarative model, 
+where pom.xml (similar to package.json) defines different properties of the build, but contains no scripts.
+
+maven has an additional local repository(cache):
+No need to fetch again the same dependency for differrent projects.
+Artifacts that are installed locally, are automatically accessible by other local projects.
+
+dependencies from a project build in maven are downloaded in <homedir>/.m2. 
+With npm they are downloaded in <projectdir>/node_modules.
+
+Building in maven is commonly a one-step process: mvn package (fetch deps , build). 
+In npm it is a 2-step process: npm install (fetch deps) , npm build (build)
+
+maven defines build lifecycles (for building,testing,deploying) consisted of phases, 
+to which default operations(plugin goals) attach, based on differrent packaging options(.jar,.war,.ear e.t.c). 
+You can then overwrite these operations, or inject new ones (via the plugin system). 
+This provides kind of an out-of-the box solution for build,docgen,test,deploy e.t.c.
+npm approach is more simplistic ( see: scripts)
+
+Due to the above, npm is labeled as a package-management tool for javascript 
+while maven is labeled as a build-automation and dependency-management tool for java.
+
+In maven setting-up the build process more commonly involves editing the pom.xml.
+In npm it involves writing code or configuring complementary build tools like gulp,webpack e.t.c
+
+For some reason version ranges defined by users in npm modules, are much more loose than in maven. 
+This can cause issues with transitive dependencies, 
+that is why an additional file was recently added: package-lock.json
+
+With npm it is much more straightforward to start a new project: npm init. 
+With maven, you need to know how to write a minimal pom.xml, or read about archetypes.
+
+In general it is much more common to edit pom.xml than package.json. 
+E.g. adding dependencies in maven is done manually (or via IDE) while in npm via command line.
+
+As with all build tools, you can call one tool from inside the other, 
+but I think its much more common to call npm from inside maven, than the opposite.
+
+npm supports dev,production builds. In maven this needs to be defined through profiles.
+
+Link: 
+Maven:         https://maven.apache.org/what-is-maven.html 
+Maven Feature: https://maven.apache.org/maven-features.html
