@@ -1,0 +1,26 @@
+Features of SpringBoot:
+Convention over Configuration - In older versions of spring we have lot of XML configuration to do to run the app.
+we spend lot of time looking at the documentation and copy pasting boiler plate configuration.  
+In spring boot we get default configuration for our project. We can also change default in application.property file.
+Spring boot automatically configures all of the basics that we need form pom.xml file which is called auto configuration. 
+Spring boot application is run with the class with @SpringBootApplication which run Ioc container and auto configuring application.
+Another feature of spring boot is that it creates an embedded Tomcat server for us. In modern application we don't rely 
+on big bulky servers like Weblogic or WebSphere. We deploy a lightweight Web server inside the app itself.
+
+
+Spring Boot is an open-source micro framework maintained by a company called Pivotal. 
+It provides Java developers with a platform to get started with an auto configurable production-grade 
+Spring application. With it, developers can get started quickly without losing time on preparing 
+and configuring their Spring application.
+
+Spring Boot is built on top of the Spring framework, 
+and it comes with many dependencies that can be plugged into the Spring application. 
+Some examples are Spring Kafka, Spring LDAP, Spring Web Services, and Spring Security. 
+However, developers have to configure each building brick themselves using a lot of XML configuration files or annotations.
+
+Link: 
+Spring Boot:                        https://spring.io/projects/spring-boot 
+Getting Started with Spring Boot:   https://spring.io/guides/gs/spring-boot/  
+Spring Boot Reference:              https://docs.spring.io/spring-boot/docs/current/reference/html/ 
+Spring Boot Article:                https://stackify.com/what-is-spring-boot/
+
