@@ -70,3 +70,13 @@ Design Patterns(IoC & DI): https://martinfowler.com/articles/injection.html
 Spring IoC Container:      https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-introduction 
 Stereotype Annotations:    https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/stereotype/package-summary.html 
 Spring Fundamentals:       https://code.likeagirl.io/spring-fundamentals-beans-container-and-dependency-injection-bce17604a50b
+
+
+At the core of Spring is the dependency injection design pattern. 
+In a nutshell, dependency injection is a pattern that uses a dedicated object that 
+connects all other objects together. Each object does not need to instantiate and configure all the objects 
+that it needs (or "depends" on). 
+Spring handles it through an object called the ApplicationContext (formerly called BeanFactory). 
+A JavaBean, or bean, is really just a nickname for a component (a reusable piece of software). 
+So when Spring created the BeanFactory, it's just was to do just that: manufacture 
+and distribute beans across the application.
