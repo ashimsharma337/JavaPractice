@@ -1,0 +1,47 @@
+Spring MVC is a module of Spring designed around the MVC and front controller design patterns. 
+This module provides a single servlet, the DispatcherServlet, that forwards requests to your controllers. 
+Spring MVC handles much of the request and response work and also handles view resolution 
+when using server-side rendering. 
+We can easily create a REST API with very little code and without writing servlets!
+
+A sample HTTP request flow
+Imagine a "register user workflow", where a user fills out a form and submits it to the server 
+to get a nice little success HTML page back.
+
+In that case, your DispatcherServlet needs to do the following things:
+
+1. It needs to have a look at the incoming HTTP method request URI and any request parameters. 
+E.g.: POST /register?name=john&age33.
+
+2. It needs to potentially convert the incoming data (request parameters/body) to nice little Java objects 
+and forward them to a @Controller or @RestController class that you wrote.
+
+3. Your @Controller method saves a new user to the database, maybe sends out an email, etc. 
+It would highly likely delegate that to another service class, but let’s assume for now this happens inside the controller.
+
+4. It needs to take whatever the output from your @Controller was and convert it back to HTML/JSON/XML.
+
+Summary: Model-View-Controller
+Having seen a complete @Controller & ViewResolver example makes it much easier to talk about 
+Spring’s Model-View-Controller concept.
+
+-With a couple of annotations (@Controller, @PostMapping, @RequestParam) we can write a controller 
+ that takes care of receiving request data and processes it accordingly.
+
+-Our model contains all the data (and just the data) that we want to render in our view. 
+ It is our job to fill that model map.
+
+-Our view is just an HTML template. It does not care about where we got the (model) data from. 
+ Or what the current HTTP request is. Or even whether we have an active HTTP Session or not.
+
+It is all about separation of concerns.
+
+Links: 
+DispatcherServlet:              https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/mvc.html#mvc-servlet
+Implementing Controllers:       https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/mvc.html#mvc-controller
+Building a REST Web Service:    https://spring.io/guides/gs/rest-service/
+PathVariables:                  https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/mvc.html#mvc-ann-requestmapping-uri-templates
+RequestParam:                   https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/mvc.html#mvc-ann-requestparam
+Spring MVC Reference:           https://docs.spring.io/spring-framework/docs/current/reference/html/web.html 
+
+
