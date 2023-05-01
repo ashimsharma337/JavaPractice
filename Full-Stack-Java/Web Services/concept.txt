@@ -57,3 +57,17 @@ APIs come in different forms, such as web, database, system, and File APIs.
 For instance, if you want to add a weather forecast to your application, you can fetch data from a weather API. 
 Payment processors such as Stripe and PayPal also allow you to use their API to enable the processing of payments. 
 
+
+Kafka APIs	                                                           REST API
+
+Kafka APIs are used to implement data pipelines,        It is used to act as a bridge between client and server. 
+real-time data streams, etc.                            The client requests data from the server, 
+                                                        and the server sends back a response. 
+                                                        All this is done using the REST API.
+With Kafka APIs, you publish and subscribe to topics.	With the REST API, you request and await a response. 
+                                                        It is also done on demand.
+Kafka APIs store data in topics.	                    With REST APIs, you can store data in the database on the server.
+
+With Kafka API, you often are not 
+interested in a response.	                        You are typically expecting a response back when using REST APIs.
+It provides bidirectional communication.	        The REST API is unidirectional, i.e., you can only send or receive a response at a time.
