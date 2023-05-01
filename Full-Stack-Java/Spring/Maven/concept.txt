@@ -60,6 +60,11 @@ but I think its much more common to call npm from inside maven, than the opposit
 
 npm supports dev,production builds. In maven this needs to be defined through profiles.
 
+NOTE: 
+JVM vs. V8+Node
+Java vs. Javascript
+Tomcat vs. Express
+
 Link: 
 Maven:         https://maven.apache.org/what-is-maven.html 
 Maven Feature: https://maven.apache.org/maven-features.html

@@ -27,14 +27,14 @@ Spring is a framework for dependency injection:
                                    
                                    Spring and JEE 
     
-    UI Layer(Strut/JSF)                              ProductController 
+    UI Layer(Strut/JSF)                              ProductController (Controller) RestController eliminates ViewResolver
        |    (Spring MVC)                                |     ^
        |                                                |     | inject
-    Bussiness/Services                                ProductSevice 
+    Bussiness/Services                                ProductSevice (Service)
     Layer    (Security)                                  |     ^
        |     (Transaction Management)                          | inject
        |                                                 |     |
-    Data Access Layer(Spring JDBC)                     ProductDao
+    Data Access Layer(Spring JDBC)                     ProductDao (DAO/Repository)
        |             (Spring ORM)
        |
     Database 
