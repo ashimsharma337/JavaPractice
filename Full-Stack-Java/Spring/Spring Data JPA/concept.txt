@@ -1,0 +1,78 @@
+Hibernate 
+
+Java Hibernate is an object-relational mapping tool(ORM) allowing the mapping of 
+object-oriented models to relational databases for web applications by providing a framework. 
+Mapping of entities in a Java class to tables created in a database and mapping from 
+Java data types to SQL data types is one of the primary functions of Hibernate. 
+We can also inquire or retrieve data using Hibernate. It relieves the developer from manually handling the database.
+
+Hibernate is a framework which provides some abstraction layer, 
+meaning that the programmer does not have to worry about the implementations, 
+Hibernate does the implementations for us internally like Establishing a connection with the database, 
+writing query to perform CRUD operations etc.
+It is a java framework which is used to develop persistence logic. 
+Persistence logic means to store and process the data for long use. 
+More precisely Hibernate is an open-source, non-invasive, 
+light-weight java ORM(Object-relational mapping) framework to develop objects 
+which are independent of the database software and make independent persistence logic in all JAVA, JEE.
+
+- Spring uses Hibernate to interact with the database 
+- Hibernate is an ORM framework (Object relational mapping) 
+(which field in the java object correspond to which column in database) 
+- Hibernate does this with entity mapping annotations (from JPA library) 
+
+Spring Data JPA 
+Spring Data automatically configures Hibernate 
+       - SessionFactory: manages connections, entity mappings, etc. 
+       - Session: build queries, creates transactions, etc. 
+       - Many more components and boilerplate code. 
+@Repository annotation 
+       - Uses Spring AOP to create Hibernate sessions and handle transactions 
+
+         Aspect-oriented programming (AOP) is one of the major components of the Spring Framework. 
+         The Spring AOP helps in breaking down the logic of the program into several distinct parts 
+         called as concerns. Cross-cutting concerns is the functions which span multiple points of an application.
+
+         The cross-cutting concerns help in increasing the modularity and separate it from the business logic 
+         of an application. Also, a cross-cutting is a concern that affects the whole application 
+         and it should be centralized in one location in code as possible 
+         such as authentication, transaction management, logging etc. 
+
+JpaRepository interface has basic methods out of the box!
+       - Save 
+       - FindAll 
+       - FindById 
+
+JPA 
+JPA is a Java specification(Jakarta Persistence API) and it manages relational data in Java applications. 
+To access and persist data between Java object(Plain Old Java object)/ class and relational database, 
+we can use JPA. Upon  Object-Relation Mapping (ORM), it follows the mechanisms. 
+It has the runtime EntityManager API and it is responsible for processing queries and transactions 
+on the Java objects against the database. 
+The main highlight is it uses JPQL (Java Persistent Query Language) which is platform-independent. 
+
+We cannot say that JPA is a framework, but It defines a concept and it can be implemented by any framework.
+
+Spring Data JPA API provides JpaTemplate class to integrate spring application with JPA.
+JPA (Java Persistent API) is the sun specification for persisting objects in the enterprise application. 
+It is currently used as the replacement for complex entity beans.
+
+The implementation of JPA specification are provided by many vendors such as:
+
+Hibernate
+Toplink
+iBatis
+OpenJPA etc. 
+
+Summary: 
+Spring Data JPA is a module of Spring that addresses the challenges of writing your data access layer. 
+Spring uses an object-relational mapping (ORM) framework called Hibernate to map Java objects to 
+database tables to enable query generation--meaning you can work with your database without writing SQL. 
+On top of Hibernate, Spring leverages its AOP module to automatically handle transaction management, 
+connection/session management, and much more! 
+
+Link: 
+Spring Data JPA:                     https://spring.io/projects/spring-data-jpa
+Accessing Data with JPA:             https://spring.io/guides/gs/accessing-data-jpa/
+Mapping Entities with JPA:           https://docs.jboss.org/hibernate/stable/annotations/reference/en/html_single/#entity-mapping
+Query Methods(Section 2.3):          https://docs.spring.io/spring-data/jpa/docs/1.5.0.RELEASE/reference/html/jpa.repositories.html
