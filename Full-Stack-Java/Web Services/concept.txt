@@ -1,0 +1,59 @@
+Web Services 
+A Web service is a software package that is used for communicating 
+between two devices or web entities lying on the network. 
+They involve a service provider along with a service requester, 
+i.e., the client. Since Web services are advantageous as they are language transparent, 
+so there is no issue whether the fundamental system is providing the service 
+developed in Java, PHP, or any other language. 
+At the same time, the client application is written in Python, Ruby, Perl, or JavaScript.
+
+Web servers are software or hardware (or both together) that stores 
+and delivers content to a web browser at a basic level. 
+The servers communicate with browsers using Hypertext Transfer Protocol (HTTP). 
+Web servers can also support SMTP (Simple Mail Transfer Protocol) and FTP (File Transfer Protocol). 
+
+Web services perform specific tasks. These are:
+
+Usually, web services are searched for over the network as well as call upon accordingly.
+As a web service is called, 
+it would be capable of providing operation for the client that has invoked the web service.
+
+A Web service is a software package that is used for communicating between two devices 
+or web entities lying on the network. 
+They involve a service provider along with a service requester, i.e., the client. 
+
+Since Web services are advantageous as they are language transparent, 
+so there is no issue whether the fundamental system is providing the 
+service developed in Java, PHP, or any other language. 
+At the same time, the client application is written in Python, Ruby, Perl, or JavaScript.
+
+Web services perform specific tasks. These are:
+
+Web services are mainly of two types. 
+These are:
+SOAP Web Services
+REST Web Services 
+
+SOAP stands for Simple Object Access Protocol whereas REST stands for Representational State Transfer.
+SOAP is a protocol whereas REST is an architectural pattern.
+SOAP uses service interfaces to expose its functionality to client applications 
+while REST uses Uniform Service locators to access to the components on the hardware device.
+SOAP needs more bandwidth for its usage whereas REST doesn’t need much bandwidth.
+Comparing SOAP vs REST API, SOAP only works with XML formats 
+whereas REST work with plain text, XML, HTML and JSON.
+SOAP cannot make use of REST whereas REST can make use of SOAP.
+
+Links: 
+Soap Vs Rest: https://stackify.com/soap-vs-rest/
+              https://www.redhat.com/en/topics/integration/whats-the-difference-between-soap-rest 
+              https://www.upwork.com/resources/soap-vs-rest-a-look-at-two-different-api-styles
+              https://www.soapui.org/learn/api/soap-vs-rest-api/ 
+
+SoapUI and Postman are popular API( Application Program Interface ) tools in development. 
+APIs can be used in mobile or web applications as they bridge the web server and the application’s client side. 
+
+APIs come in different forms, such as web, database, system, and File APIs. 
+
+For instance, if you want to add a weather forecast to your application, you can fetch data from a weather API. 
+Payment processors such as Stripe and PayPal also allow you to use their API to enable the processing of payments. 
+
