@@ -1,0 +1,48 @@
+Angular 
+Angular is popular framework developed by Google that's used to create single page application(SPA).
+Angular is an open-source platform for developing single-page Web applications led and maintained by Google and the Angular community. 
+Similar to React, Angular is a framework that divides the user interface into smaller, more reusable, 
+more easily tested and maintained pieces: called components.
+
+The preferred language for Angular development is Typescript: 
+a strongly-typed version of JavaScript developed by Microsoft. 
+Typescript (TS) provides things like classes, constructors, and inheritance 
+that might seem more familiar to developers that are comfortable with C# and Java. 
+
+We will learn more about Typescript throughout this Level.
+
+Similar to Spring, Angular provides a dependency injection (DI) feature. 
+Services and other objects are easily injected through another object's constructor. 
+You need only to use the @Injectable decorator on the class you wish to register with Angular's DI module. 
+Don't worry, decorators in Angular are just as easy as annotations in Java and Spring.
+
+Note: Angular 4 and above has been relatively stable, 
+but Angular 2 was the first attempt to rewrite Angular 1, also called AngularJS. 
+There are significant differences between AngularJS, Angular 2, 
+and Angular 4+. 
+
+Features of Angular
+-Components are reusable pieces of the view such as nav, banner, content, ad, footer e.t.c 
+-Components are self-contained with their own: 
+           - Template: HTML 
+           - Styles: CSS 
+           - State/variables 
+- Directives to tell Angular what to do with the HTML. For e.g instead of showing one ad we can repeat multiple add with directives 
+- Services provide data to the components 
+           - Angular uses dependency injection too!
+           - services can call call APIs on the back end and provide data to each of the components 
+           - Services also provide a place to put the logic so that components can share the logic. 
+             So, we don't have repeated code in each of the components.
+- Modules bundle up related components and services 
+
+
+The component is the basic building block of Angular. 
+It has a selector, template, style, and other properties, 
+and it specifies the metadata required to process the component. 
+
+Links: 
+Introduction to Angular Concepts:     https://angular.io/guide/architecture
+Introduction to Modules:              https://angular.io/guide/architecture-modules
+Introduction to Components:           https://angular.io/guide/architecture-components
+Introduction to Services and DI:      https://angular.io/guide/architecture-services
+AngularJS vs Angular Reference:       https://angular.io/guide/ajs-quick-reference
