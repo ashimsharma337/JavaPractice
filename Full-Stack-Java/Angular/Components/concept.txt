@@ -1,0 +1,32 @@
+Component 
+The Component is a fundamental block of Angular and multiple components will make up our application. 
+A component in Angular is made up of three main parts—the template, styles, and the class. 
+For example, app.component.ts, app.component.html, and app.component.css together constitute the AppComponent. 
+This structure separates the logic, view, and styles so that the application is more maintainable and scalable.
+
+app.module.ts:       Specifies the files that the application uses. 
+                     This file acts as a central hub for the other files in your application.
+app.component.ts:    Also known as the class, contains the logic for the application's main page.
+app.component.html:  Contains the HTML for AppComponent. 
+                     The contents of this file are also known as the template.
+                     The template determines the view or what you see in the browser.
+app.component.css:   Contains the styles for AppComponent. 
+                     You use this file when you want to define styles that only apply to a specific component, 
+                     as opposed to your application overall.
+
+A component in Angular is made up of three main parts—the template, styles, and the class. 
+
+For example, app.component.ts, app.component.html, and app.component.css together constitute the AppComponent. 
+This structure separates the logic, view, and styles so that the application is more maintainable and scalable.
+
+The Angular CLI also generates a file for component testing called app.component.spec.ts.
+
+creating component 
+ng g c <component_name> 
+OR
+ng generate component <component_name> 
+Links:
+Introduction to Components:                   https://angular.io/guide/architecture-components
+Component Decorator:                          https://angular.io/api/core/Component
+Interpolation and Template Expressions:       https://angular.io/guide/interpolation
+Binding Syntax:                               https://angular.io/guide/binding-syntax

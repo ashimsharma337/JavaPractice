@@ -1,0 +1,33 @@
+
+Angular Directive is basically a class with a @Directive decorator. 
+A component is also a directive-with-a-template. 
+A @Component decorator is actually a @Directive decorator extended with template-oriented features. 
+Whenever Angular renders a directive, it changes the DOM according to the instructions given by the directive. 
+The directive appears within an element tag similar to attributes.
+
+The Angular Directive can be classified into two types: structural and attribute directives.
+
+Structural directives alter layout by adding, removing, and replacing elements in DOM. 
+Attribute directive alter the appearance or behavior of an existing element. 
+
+When you include attribute directives in templates, they look like regular HTML attributes. 
+The ngModel directive, which implements two-way data binding, is an example of an attribute directive. 
+ngModel modifies the behavior of an existing element by setting its display property and responding to 
+the changing events. 
+
+Components are also Directive with template (tempate or templateUrls) because it also manipulate DOM.
+
+Structural directive 
+*ngIf   -adds or removes element from DOM 
+*ngFor  -renders list of element on every iteration  
+All structural Directives are preceded by Asterix(*)symbol. 
+
+Attribute directive 
+ngStyle -used to apply styles that will change the apearance. 
+ngClass -used to apply CSS to change the appearance. 
+
+LINKS: 
+Directives:                    https://angular.io/guide/built-in-directives
+Attribute Directives:          https://angular.io/guide/attribute-directives
+Structural Directives:         https://angular.io/guide/structural-directives 
+What are Directives:           https://blog.bitsrc.io/directives-in-angular-6160ce805416
