@@ -1,0 +1,74 @@
+What is AWS? 
+- Amazon Web Services (AWS) is a Comprehensive cloud computing platform delivering on demand, online technology services.
+- The cloud services offered are computer hardware and software.
+
+Amazon Web Services, Inc. (AWS) is a subsidiary of Amazon that provides on-demand cloud computing platforms 
+and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis. 
+
+What is the cloud?
+- Ondemand online computer resources.
+- Server located in provider's datacenters.
+- A datacenter is a building or space dedicated to housing many computers 
+- The cloud is someone else's computer 
+
+Benifits of Cloud 
+- Reduced responsibility (AWS manages everything)
+- Decentralzed (helps in case of failure)
+- Increased speed and agility 
+- Stop guessing capacity 
+- Cost! 
+     - Capex vs Opex 
+     - Pay as you go 
+
+
+Traditional Computing vs Cloud Computing 
+
+Traditional Computing                                          Cloud Computing 
+- Order physical parts and servers                       - Request logical components 
+- Long wait times                                        - Instantaneous delivery 
+- Control all elements of process                        - Reduction in responsibility 
+- Risk of waste                                          - Request exactly what you need 
+- Up front costs                                         - Pay as you go 
+
+Type of Cloud Computing Services 
+- There are three main types of cloud services: Iaas, Pass, and SaaS 
+- On premises solutions are traditional datacenters solutions that are built and maintained on site 
+- Cloud computing removes the responsibility of maintaining the hardware and networking 
+
+Iaas ( Infrastructure as a Service )
+- AWS manages physical hardware, you control everything else 
+- Maximum control 
+- "bare metal"/OS only 
+E.g AWS EC2, VPC, EBS.
+(DigitalOcean, Linode, Rackspace, AWS, Cisco Metapod, Microsoft Azure, Google Compute Engine(GCE))
+
+PaaS ( Platform as a Service )
+- Platform as a Service 
+- Standard software, configured as needed 
+- Ready to go service. No access to infrastructure 
+ e.g AWS: Elastic Beanstalk, Cloud Formation, Lambda, RDS, S3 
+ (Windows Azure, Heroku, Force.com, Google App Engine, Apache Stratos, OpenShift)
+
+SaaS ( Software as a Service )
+- Pre-packaged software procvided "as-is" by the vendor 
+- Email, chat clients, apps, etc 
+- AWS can be used to create SaaS Solutions 
+e.g WhatsApp, Google Maps, DocuSign, Slack 
+( Google Workspace, Dropbox, Salesforce, Cisco WebEx, Concur, GoToMeeting ) 
+
+There are three types of deployment model 
+On premises: the legacy IT option. This approach gives us full controll 
+Cloud: Fully deployed in the cloud. Not responsible for maintaining any hardware 
+Hybrid: Deployment between cloud and existing on-premises infrastructure. Connects the cloud to internal systems. 
+
+LINKS: 
+What is AWS? :                   https://aws.amazon.com/what-is-aws/
+Advantages of Cloud Computing:   https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html
+Benifits of AWS:                 https://www.educba.com/benefits-of-aws/
+Types of Cloud Computing:        https://aws.amazon.com/types-of-cloud-computing/
+Types of Cloud Computing Chart:  https://kinsta.com/blog/types-of-cloud-computing/
+SaaS vs PaaS vs IaaS:            https://www.bmc.com/blogs/saas-vs-paas-vs-iaas-whats-the-difference-and-how-to-choose/
+Caching and latency:             https://www.cloudflare.com/learning/cdn/what-is-caching/   
+
+Datacenter:                      https://aws.amazon.com/compliance/data-center/data-centers/
+Server:                          https://en.wikipedia.org/wiki/Server_(computing)
