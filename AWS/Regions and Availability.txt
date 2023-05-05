@@ -1,0 +1,36 @@
+Global Infrastructure 
+AWS global infrastructure: 
+    - Regions 
+    - Local Zones 
+    - Availability Zones 
+    - Edge Locations 
+
+Regions: 
+- Regions are locations around the world where there is a cluster of data centers. Each group of data centers is an 
+  Availability Zone. Each Region consists of multiple physically separate AZ's within a geographic area. Each AZ 
+  has its own power, cooling, security, and is connected by redundant, ultra-low-latency networks. 
+- We can design our applications to run in multiple AZ's to achieve high availiblity. 
+- Local Zones are new and rare, AZ's are common. It is an extension of current region into a highly densely populated area. 
+High Availibility: 
+- A Highly Available system is a system that is dependable and has been constructed anticipating failure.
+- Failures happen - we have power outages, part malfunctions, etc. Which is why it's important to make our systems 
+  redundant across multiple AZ's 
+- Multi AZ ensures our systems are running in multiple locations on multiple servers. If an entire AZ goes down, our services 
+  will still be available to our users. Each AZ has one or more datacenter 
+- Edge Locations (PoP: Points of Presence)
+  An Edge Location is a datacenter typically located away from regions, where files (html, CSS, picture, etc) are copied/cached 
+  We can copy our files onto edge locations so it's closer to our users for faster delivery 
+  Edge locations are the backbone of the AWS Content Delivery Network (CDN) 
+  - Temporarily copying files onto edge locations is a process called caching 
+  - Cached files have a time-to-live (TTL) before they expire 
+  - This TTL ensures that as you update files on your application, the cached files get updated too 
+  - Forcing an update to the cache is called 'cache invalidation'
+
+LINKS: 
+Regions, Availability Zones, and Local Zones:   https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html
+Global Infrastructure:                          https://aws.amazon.com/about-aws/global-infrastructure/regions_az/
+Edge Locations:                                 https://aws.amazon.com/cloudfront/
+Network Line:                                   https://blog.google/products/google-cloud/delivering-increased-connectivity-with-our-first-private-trans-atlantic-subsea-cable/
+Caching:                                        https://aws.amazon.com/caching/
+General FAQ:                                    https://aws.amazon.com/about-aws/global-infrastructure/localzones/faqs/
+AWS Interactive Global Map:                     https://aws.amazon.com/about-aws/global-infrastructure/regions_az/
