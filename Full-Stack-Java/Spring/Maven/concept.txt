@@ -12,6 +12,7 @@ Three Java build automation tools that dominated the JVM ecosystem – Ant, Mave
 A JAR (Java Archive) is a package file format typically used to aggregate many Java class files 
 and associated metadata and resources (text, images, etc.) 
 into one file to distribute application software or libraries on the Java platform. 
+We can build our application, and create a jar file. To execute this jar file we can use java -jar [file name]
 
 In addition to the jar, there are also other Java-related archives:
 
